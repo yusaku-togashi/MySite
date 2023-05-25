@@ -35,3 +35,138 @@
     margin-top: 5px;
     border: #fff solid 0.1px;
 }
+
+header {
+    border-bottom:1px solid #9f9f9f;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header .logo img {
+    width: 120px;
+}
+
+.header .content {
+    display: flex;
+}
+
+.header .content .element {
+    display: flex;
+}
+
+.header .content .item {
+    padding-left: 40px;
+}
+
+.header .content .item .title::after{
+    content: 'v';
+    color: #7f7f7f;
+}
+
+.header .content .item .online-shop {
+    color: #dc143c;
+}
+
+.header .content .hidden {
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+}
+
+.header .content .help ul{
+    display: flex;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.header .content .help li{
+    padding-left: 20px;
+}
+
+.news {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 120px;
+    border-bottom: 1px solid #7f7f7f;
+}
+
+.news .heading {
+    font-size: 30px;
+    text-align: center;
+}
+
+.news .sarch {
+    margin-bottom: 40px;
+}
+
+.news .sarch ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.news .sarch li {
+    margin: 0 30px;
+    font-size: 15px;
+}
+
+.news .sarch #all {
+    border: 2px solid #9f9f9f;
+    padding: 0 30px;
+    color: #7f7f7f;
+}
+
+.news .sarch #news {
+    border: 2px solid #87ceeb;
+    padding: 0 30px;
+    color: #87ceeb;
+}
+
+.news .sarch #pickup {
+    border: 2px solid #900090;
+    padding: 0 30px;
+    color: #900090;
+}
+
+.news .topics {
+    display: flex;
+    padding: 20px 0;
+    border-top:solid 1px #7f7f7f;
+}
+
+.news .topics .category {
+    margin-left: 20px;
+    width: 100%;
+    max-width:120px ;
+}
+
+.news .topics .category #news {
+    padding: 0 20px 0 35px;
+    border: 1px solid #87ceeb;
+    color: #87ceeb;
+}
+
+.news .topics .category #pickup {
+    padding: 0 20px 0 30px;
+    border: 1px solid #900090;
+    color: #900090;
+}
+
+.news .topics .date {
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+.news .topics .title {
+    margin-left: 50px;
+    font-size: 15px;
+}

@@ -17,15 +17,15 @@
                 <div class="play">PLAY MOVIE</div>
             </div>
         </div>
-        <div class="logo">
-            <a class="image" href="https://www.hario.com/"><img src="https://www.hario.com/theme-images/logo.png?20221005" alt=""></a>
-        </div>
-        <nav>
-            <div class="content">
-                <ul>
-                    <li class="item">
-                        <div class="element">
-                            <ul>
+        <div class="header">
+            <div class="logo">
+                <a class="image" href="https://www.hario.com/"><img src="https://www.hario.com/theme-images/logo.png?20221005" alt=""></a>
+            </div>
+            <nav>
+                <div class="content">
+                    <ul class="element">
+                        <li class="item">
+                            <ul class="hidden">
                                 <li><a href="">企業情報</a></li>
                                 <li><a href="">HARIOガラスへのこだわり</a></li>
                                 <li><a href="">日本で唯一の工場</a></li>
@@ -34,15 +34,15 @@
                                 <li><a href="">HARIOのSDGs</a></li>
                                 <li><a href="">ガラスの楽器</a></li>
                             </ul>
-                        </div>
-                        <a href="/about/">私たちHARIOのこと</a>
-                    </li>
-                    <li class="item">
-                        <a href="/news/">ニュース</a>
-                    </li>
-                    <li class="item">
-                        <div class="element">
-                            <ul>
+                            <div class="title">
+                                <a href="/about/">私たちHARIOのこと</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <a href="/news/">ニュース</a>
+                        </li>
+                        <li class="item">
+                            <ul class="hidden">
                                 <li><a href="">コーヒー関連</a></li>
                                 <li><a href="">ティー関連</a></li>
                                 <li><a href="">酒器・グラス関連</a></li>
@@ -51,24 +51,24 @@
                                 <li><a href="">理化学用品</a></li>
                                 <li><a href="">スペアパーツ</a></li>
                             </ul>
-                        </div>
-                        <a href="/products/">製品情報</a>
-                    </li>
-                    <li class="item">
-                        <div class="item">
-                            <ul>
+                            <div class="title">
+                                <a href="/products/">製品情報</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <ul class="hidden">
                                 <li><a href="">BACK NUMBER</a></li>
                                 <li><a href="">粕谷モデル</a></li>
                                 <li><a href="">Simply HARIO</a></li>
                                 <li><a href="">more about HARIO</a></li>
                                 <li><a href="">COLUMN</a></li>
                             </ul>
-                        </div>
-                        <a href="/topics">注目製品のご紹介</a>
-                    </li>
-                    <li class="item">
-                        <div class="element">
-                            <ul>
+                            <div class="title">
+                                <a href="/topics">注目製品のご紹介</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <ul class="hidden">
                                 <li><a href="">事業内容紹介</a></li>
                                 <li><a href="">研修制度・FAQ</a></li>
                                 <li><a href="">福利厚生・イベント</a></li>
@@ -76,50 +76,41 @@
                                 <li><a href="">HARIO採用情報</a></li>
                                 <li><a href="">エントリー</a></li>
                             </ul>
-                        </div>
-                        <a href="//">採用について</a>
-                    </li>
-                    <li class="item">
-                        <a href="/online/">オンラインショップ</a>
-                    </li>
-                </ul>
-                <div class="item">
-                    <ul>
-                        <li>FAQ</li>
-                        <li>お問い合わせ</li>
-                        <li>言語</li>
-                        <li>検索</li>
+                            <div class="title">
+                                <a href="//">採用について</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="online-shop">
+                                <a href="/online/">オンラインショップ</a>
+                            </div>
+                        </li>
                     </ul>
+                    <div class="help">
+                        <ul>
+                            <li>FAQ</li>
+                            <li>お問い合わせ</li>
+                            <li>言語</li>
+                            <li>検索</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="news">
             <div class="heading"><h1>ニュース</h1></div>
-            <div class="navigation"><h2>重要なお知らせ</h2></div>
-            <div class="serch">
+            <div class="sarch">
                 <ul>
-                    <li><button>ALL</button></li>
-                    <li><button>NEWS</button></li>
-                    <li><button>EVENT</button></li>
-                    <li><button>PICKUP</button></li>
+                    <li><button id="all">ALL</button></li>
+                    <li><button id="news">NEWS</button></li>
+                    <li><button id="pickup">PICKUP</button></li>
                 </ul>
             </div>
             <div class="topics">
                 <div class="category">
-                    <h3>EVENT</h3>
-                </div>
-                <div class="date">
-                    <p>2023.05.19</p>
-                </div>
-                <div class="title">
-                    <p>東武百貨店 池袋店 実演販売のお知らせ</p>
-                </div>
-            </div>
-            <div class="topics">
-                <div class="category">
-                    <h3>NEWS</h3>
+                    <h3 id="news">NEWS</h3>
                 </div>
                 <div class="date">
                     <p>2023.04.26</p>
@@ -130,7 +121,7 @@
             </div>
             <div class="topics">
                 <div class="category">
-                    <h3>PICKUP</h3>
+                    <h3 id="pickup">PICKUP</h3>
                 </div>
                 <div class="date">
                     <p>2023.04.11</p>
@@ -141,7 +132,7 @@
             </div>
             <div class="topics">
                 <div class="category">
-                    <h3>PICKUP</h3>
+                    <h3 id="pickup">PICKUP</h3>
                 </div>
                 <div class="date">
                     <p>2023.04.03</p>
@@ -152,7 +143,7 @@
             </div>
             <div class="topics">
                 <div class="category">
-                    <h3>PICKUP</h3>
+                    <h3 id="pickup">PICKUP</h3>
                 </div>
                 <div class="date">
                     <p>2023.03.13</p>
@@ -163,7 +154,7 @@
             </div>
             <div class="topics">
                 <div class="category">
-                    <h3>NEWS</h3>
+                    <h3 id="news">NEWS</h3>
                 </div>
                 <div class="date">
                     <p>2023.03.05</p>
