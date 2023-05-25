@@ -1,4 +1,5 @@
 .background-image {
+    position: relative;
     display: block;
     width: 100%;
     height: 100vh;
@@ -8,6 +9,29 @@
     background-repeat: no-repeat;
 }
 
-h1 {
-    font-size: 40px;
+.background-image .content {
+    font-size: 18px;
+    position: absolute;
+    top: 92%;
+    left: 45%;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.background-image .content .scroll::after {
+    display: block;
+    content: 'V';
+    color: #fff;
+    text-align: center;
+}
+
+.background-image .content .play::after {
+    display: block;
+    content: '';
+    width: 115px;
+    margin-top: 5px;
+    border: #fff solid 0.1px;
 }
