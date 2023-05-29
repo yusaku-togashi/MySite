@@ -574,3 +574,71 @@ header {
     margin-left: 80px;
     padding-right: 20px;
 }
+
+footer {
+    color: #000;
+    background-color:rgba(300, 200, 176, 0.2);
+    margin-top:100px;
+}
+
+footer .footer {
+    width: 100%;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.footer .heading {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.footer .heading img {
+    width: 100%;
+    max-width: 130px;
+}
+
+.footer .content {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.footer .content .topics {
+    width: 100%;
+    max-width: 250px;
+}
+
+.footer .content .topics #information {
+    padding-left: 50px;
+}
+
+.footer .content .list {
+    padding: 10px;
+}
+
+.footer .content .list li {
+    list-style: square;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+footer .content .list p {
+    position: relative;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+footer .content .list p::before {
+    content: ">";
+    position: absolute;
+    left: -7%;
+}
+
+.footer .content .topics ul {
+    padding-top: 10px;
+    line-height: 35px;
+}
