@@ -642,3 +642,58 @@ footer .content .list p::before {
     padding-top: 10px;
     line-height: 35px;
 }
+
+.footer .jump-site {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .sns ul {
+    display: flex;
+}
+
+.footer .sns li img{
+    width: 100%;
+    max-width: 35px;
+    height: auto;
+    margin-left: 7px;
+    border-radius: 50%;
+}
+
+.footer .cafe {
+    margin-top: 5px;
+}
+
+.footer .policy {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .policy .site-policy p::after {
+    content: "";
+    border-right:1px solid #000 ;
+    margin-left: 25px;
+}
+
+.footer .copy-right p{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    color: #9f9f9f;
+}
