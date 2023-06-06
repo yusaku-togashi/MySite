@@ -8,7 +8,6 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .background-image .content {
     font-size: 18px;
     position: absolute;
@@ -40,6 +39,19 @@ header {
     border-bottom:1px solid #9f9f9f;
 }
 
+
+.navigation.fixed {
+    width: 100%;
+    height: 71px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #7f7f7f;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -47,6 +59,22 @@ header {
     height: auto;
     margin: auto;
     padding: 20px 0;
+    background-color: #fff;
+}
+
+.header.fixed {
+    position: fixed;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header nav {
+    position: relative;
 }
 
 .header .logo img {
@@ -59,26 +87,64 @@ header {
 
 .header .content .element {
     display: flex;
-}
-
-.header .content .item {
     padding-left: 40px;
 }
 
-.header .content .item .title::after{
+.header .content .tab-item {
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.header .content .tab-item h2::after{
     content: 'v';
     color: #7f7f7f;
+    margin-left: 5px;
 }
 
 .header .content .item .online-shop {
     color: #dc143c;
 }
 
-.header .content .hidden {
-    max-height: 0;
-    max-width: 0;
-    overflow: hidden;
+.header .tab-item .title {
+    cursor: pointer;
 }
+
+
+.header .tab-item .title h2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.hidden li {
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.hidden li:hover {
+    text-decoration: underline;
+    opacity: .5;
+} 
+
+.hidden {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 70px;
+    overflow: hidden;
+    max-height: 0;
+    width: 100%;
+    max-width: 1200px;
+    transition: .3s linear;
+}
+
+.tab-item .hidden.selected {
+    padding: 10px 0;
+    max-height: 50px;
+}
+
 
 .header .content .help ul{
     display: flex;
@@ -144,32 +210,108 @@ header {
     border-top:solid 1px #7f7f7f;
 }
 
-.news .topics .category {
+.news .category {
     margin-left: 20px;
     width: 100%;
     max-width:120px ;
 }
 
-.news .topics .category #news {
+.news  .category #news {
     padding: 0 20px 0 35px;
     border: 1px solid #87ceeb;
     color: #87ceeb;
 }
 
-.news .topics .category #pickup {
+.news .category #pickup {
     padding: 0 20px 0 30px;
     border: 1px solid #900090;
     color: #900090;
 }
 
-.news .topics .date {
+.news .date {
     margin-left: 50px;
     font-size: 15px;
 }
 
-.news .topics .title {
+.news .title {
+    position: relative;
+    cursor: pointer;
     margin-left: 50px;
+    padding: 0 0 0 50px;
     font-size: 15px;
+}
+
+.news .box-title {
+    position: relative;
+    cursor: pointer;
+    margin-left: 50px;
+    padding: 0 0 0 50px;
+    font-size: 15px;
+}
+
+.news .box-title::before,
+.news .box-title::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+}
+
+.news .box-title::before{
+    top: 48%;
+    left: 15px;
+    transform: rotate(0deg);
+    transition: .5s;
+}
+
+.news .box-title::after {
+    top: 48%;
+    left: 15px;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+.news .box-title.active::before{
+    top: 48%;
+    left: 15px;
+    transform: rotate(0deg);
+}
+
+.news .box-title.active::after {
+    top: 48%;
+    left: 15px;
+    transform: rotate(180deg);
+}
+
+.box {
+    max-height: 0;
+    background-color:rgba(300, 200, 176, 0.2);
+    padding: 0 50px;
+    transition: max-height .7s, padding .7s; 
+    overflow: hidden;
+}
+
+.box.active {
+    width: 100%;
+    max-height: 500px;
+    opacity: 1;    
+    padding: 50px;
+    background-color:rgba(300, 200, 176, 0.2);
+    transition: max-height .7s, padding .7s;
+}
+
+.box .box-image  {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.box .box-text p {
+    font-weight: bold;
 }
 
 .about {
@@ -179,6 +321,13 @@ header {
     height: auto;
     margin: auto;
     margin-top: 100px;
+    transition: .3s linear; 
+}
+
+.about:hover {
+    opacity: .7;
+    scale: 105%;
+    height: auto;
 }
 
 .about .content {
@@ -200,6 +349,8 @@ header {
 
 .about .item-image {
     padding: 60px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .about .item-image .item {
@@ -242,12 +393,18 @@ header {
 }
 
 .products {
+    opacity: 0;
     position: relative;
     width: 100%;
     max-width: 1200px;
     height: auto;
     margin: auto;
     margin-top: 100px;
+    transition: 0.5s linear;
+}
+
+.products.fadein {
+    opacity: 1;
 }
 
 .products .heading {
