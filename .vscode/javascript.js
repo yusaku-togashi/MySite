@@ -50,7 +50,32 @@ function fadeinBlock() {
 		}
 }
 
-
 $(window).scroll(function () {
 	fadeinBlock();
 });
+
+const swiper = new Swiper('.slide', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 5, 
+    loopAdditionalSlides: 1,
+    speed: 600, 
+    effect: "slide",
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+// const swiper2 = new Swiper('.more-about', {
+//     loop: true, 
+//     centeredSlides: true, 
+//     // slidesPerView: 5,
+//     spaceBetween: 16,
+  
+//     pagination: {
+//       el: '.swiper-pagination',
+//       type: "bullets",
+//       clickable: true,
+//     },
+//   });
