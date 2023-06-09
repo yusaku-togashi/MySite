@@ -186,16 +186,30 @@ header {
     font-size: 15px;
 }
 
+.news .sarch li:hover {
+    opacity: .5;
+}
+
 .news .sarch #all {
     border: 2px solid #9f9f9f;
     padding: 0 30px;
     color: #7f7f7f;
 }
 
+.news .sarch #all.clicked {
+    background-color: #7f7f7f;
+    color: #fff;
+}
+
 .news .sarch #news {
     border: 2px solid #87ceeb;
     padding: 0 30px;
     color: #87ceeb;
+}
+
+.news .sarch #news.clicked {
+    background-color: #87ceeb;
+    color: #fff;
 }
 
 .news .sarch #pickup {
@@ -467,7 +481,6 @@ header {
 
 .slide {
     width: 100%;
-    margin-left: 100px;
 }
 
 
@@ -525,7 +538,7 @@ header {
     color: #d87093;
 }
 
-.content .new-tab {
+.swiper-slide .content .new-tab {
     position: absolute;
     top: 0;
     background-color:#d87093;

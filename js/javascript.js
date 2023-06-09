@@ -56,15 +56,65 @@ $(window).scroll(function () {
 
 const swiper = new Swiper('.slide', {
     loop: true,
-    centeredSlides: true,
-    slidesPerView: 5, 
+    slidesPerView: 4, 
     loopAdditionalSlides: 1,
+    spaceBetween:20,
     speed: 600, 
     effect: "slide",
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+});
+
+var serchButton = document.querySelectorAll("button");
+var allButton = document.getElementById("all");
+var newsButton = document.getElementById("news");
+var pickupButton = document.getElementById("pickup");
+
+var topics = document.getElementsByClassName("topics");
+
+allButton.addEventListener("click", function(){
+    for (var i = 0; i < topics.length; i++){
+        topics[i].style.display = "flex";
+        if (!(serchButton == "clicked")){
+            allButton.classList.toggle("clicked")
+        }else{
+            allButton.classList.remove("clicked")
+        }
+    }
+});
+
+newsButton.addEventListener("click", function(){
+    if (!(allButton&&newsButton == "clicked")){
+        newsButton.classList.toggle("clicked")
+    }else{
+        newsButton.removeClass("clicked")
+    }
+    for (var i = 0; i < topics.length; i++){
+        topics[i].style.display = "none";
+    }
+    var newsTopics = document.querySelectorAll(".topics .category h3#news");
+    for (var i = 0; i < newsTopics.length; i++){
+        var topic = newsTopics[i].parentNode.parentNode;
+        topic.style.display = "flex";
+    }
+});
+
+pickupButton.addEventListener("click", function(){
+    if (!(allButton&&newsButton&&pickupButton == "clicked")){
+        pickupButton.classList.toggle("clicked")
+    }else{
+        pickupButton.removeClass("clicked")
+    }
+    for (var i = 0; i < topics.length; i++){
+        topics[i].style.display = "none";
+    }
+    var pickupTopics = document.querySelectorAll(".topics .category h3#pickup");
+    for (var i = 0; i < pickupTopics.length; i++){
+        var topic = pickupTopics[i].parentNode.parentNode;
+        topic.style.display = "flex";
+    }
 });
 
 // const swiper2 = new Swiper('.more-about', {
