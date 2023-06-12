@@ -1,5 +1,5 @@
-var boxTitle = document.querySelector('.box-title');
-var box = document.querySelector('.box')
+var boxTitle = document.querySelector('.js-title');
+var box = document.querySelector('.js-box')
 
 boxTitle.addEventListener('click', function() {
         box.classList.toggle('active');
@@ -8,10 +8,10 @@ boxTitle.addEventListener('click', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    var tabItems = document.querySelectorAll('.tab-item');
+    var items = document.querySelectorAll('.tab-wrapper');
 
-    tabItems.forEach(function(tabItem) {
-        var hiddenMenu = tabItem.querySelector('.hidden');
+    items.forEach(function(item) {
+        var hiddenMenu = tabItem.querySelector('.js-hidden');
         var title = tabItem.querySelector('.title');
         if(title){
             title.addEventListener('mouseover', function() {
@@ -54,25 +54,30 @@ $(window).scroll(function () {
 	fadeinBlock();
 });
 
-const swiper = new Swiper('.slide', {
+var myswiper = new Swiper('.js-swiper1', {
     loop: true,
-    slidesPerView: 4, 
+    slidesPerView: 5,
+    centeredSlides:true, 
     loopAdditionalSlides: 1,
-    spaceBetween:20,
+    spaceBetween:30,
     speed: 600, 
     effect: "slide",
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable:true,
+      },
 });
 
-var serchButton = document.querySelectorAll("button");
+var serchButton = document.querySelectorAll("serch-button");
 var allButton = document.getElementById("all");
 var newsButton = document.getElementById("news");
 var pickupButton = document.getElementById("pickup");
 
-var topics = document.getElementsByClassName("topics");
+var articles = document.getElementsByClassName("articles");
 
 allButton.addEventListener("click", function(){
     for (var i = 0; i < topics.length; i++){
@@ -117,15 +122,14 @@ pickupButton.addEventListener("click", function(){
     }
 });
 
-// const swiper2 = new Swiper('.more-about', {
-//     loop: true, 
-//     centeredSlides: true, 
-//     // slidesPerView: 5,
-//     spaceBetween: 16,
-  
-//     pagination: {
-//       el: '.swiper-pagination',
-//       type: "bullets",
-//       clickable: true,
-//     },
-//   });
+var mypagination = new Swiper('.js-swiper2', {
+    slidesPerView: 3.5,
+    loopAdditionalSlides: 1,
+    centeredSlides:true,
+    spaceBetween: 25,
+    loop:true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
