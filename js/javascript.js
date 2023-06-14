@@ -2,17 +2,16 @@ var boxTitle = document.querySelector('.js-title');
 var box = document.querySelector('.js-box')
 
 boxTitle.addEventListener('click', function() {
-        box.classList.toggle('active');
-        boxTitle.classList.toggle('active');
+    box.classList.toggle('active');
+    boxTitle.classList.toggle('active');
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
-    var items = document.querySelectorAll('.tab-wrapper');
+    var items = document.querySelectorAll('.js_nav_contents');
 
     items.forEach(function(item) {
-        var hiddenMenu = tabItem.querySelector('.js-hidden');
-        var title = tabItem.querySelector('.title');
+        var hiddenMenu = item.querySelector('.js_hidden');
+        var title = item.querySelector('.js_title');
         if(title){
             title.addEventListener('mouseover', function() {
                 hiddenMenu.classList.toggle('selected');
@@ -26,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function FixedHeader() {
-	var headerH = $('.background-image').outerHeight(true);
+	var headerH = $('.background_image').outerHeight(true);
 	var scroll = $(window).scrollTop();
 	if (scroll >= headerH){
 			$('.header').addClass('fixed');
@@ -54,14 +53,12 @@ $(window).scroll(function () {
 	fadeinBlock();
 });
 
-var myswiper = new Swiper('.js-swiper1', {
-    loop: true,
+const newProductsSwiper = new Swiper('.slider', {
+    loop:true,
     slidesPerView: 5,
-    centeredSlides:true, 
-    loopAdditionalSlides: 1,
-    spaceBetween:30,
-    speed: 600, 
-    effect: "slide",
+    centeredSlides:true,
+    loopAdditionalSlides: 3, 
+    spaceBetween: 25,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -72,16 +69,16 @@ var myswiper = new Swiper('.js-swiper1', {
       },
 });
 
-var serchButton = document.querySelectorAll("serch-button");
-var allButton = document.getElementById("all");
-var newsButton = document.getElementById("news");
-var pickupButton = document.getElementById("pickup");
+var serchButton = document.querySelectorAll("js_serch_button");
+var allButton = document.getElementById("js_all_button");
+var newsButton = document.getElementById("js_news_button");
+var pickupButton = document.getElementById("js_pickup_button");
 
-var articles = document.getElementsByClassName("articles");
+var articles = document.getElementsByClassName("js_articles");
 
 allButton.addEventListener("click", function(){
-    for (var i = 0; i < topics.length; i++){
-        topics[i].style.display = "flex";
+    for (var i = 0; i < articles.length; i++){
+        articles[i].style.display = "flex";
         if (!(serchButton == "clicked")){
             allButton.classList.toggle("clicked")
         }else{
@@ -91,38 +88,28 @@ allButton.addEventListener("click", function(){
 });
 
 newsButton.addEventListener("click", function(){
-    if (!(allButton&&newsButton == "clicked")){
-        newsButton.classList.toggle("clicked")
-    }else{
-        newsButton.removeClass("clicked")
+    for (var i = 0; i < articles.length; i++){
+        articles[i].style.display = "none";
     }
-    for (var i = 0; i < topics.length; i++){
-        topics[i].style.display = "none";
-    }
-    var newsTopics = document.querySelectorAll(".topics .category h3#news");
-    for (var i = 0; i < newsTopics.length; i++){
-        var topic = newsTopics[i].parentNode.parentNode;
-        topic.style.display = "flex";
+    var newsArticles = document.querySelectorAll(".js_articles .js_category h3#news");
+    for (var i = 0; i < newsArticles.length; i++){
+        var article = newsArticles[i].parentNode.parentNode;
+        article.style.display = "flex";
     }
 });
 
 pickupButton.addEventListener("click", function(){
-    if (!(allButton&&newsButton&&pickupButton == "clicked")){
-        pickupButton.classList.toggle("clicked")
-    }else{
-        pickupButton.removeClass("clicked")
+    for (var i = 0; i < articles.length; i++){
+        articles[i].style.display = "none";
     }
-    for (var i = 0; i < topics.length; i++){
-        topics[i].style.display = "none";
-    }
-    var pickupTopics = document.querySelectorAll(".topics .category h3#pickup");
-    for (var i = 0; i < pickupTopics.length; i++){
-        var topic = pickupTopics[i].parentNode.parentNode;
-        topic.style.display = "flex";
+    var pickupArticles = document.querySelectorAll(".js_articles .js_category h3#pickup");
+    for (var i = 0; i < pickupArticles.length; i++){
+        var article = pickupArticles[i].parentNode.parentNode;
+        article.style.display = "flex";
     }
 });
 
-var mypagination = new Swiper('.js-swiper2', {
+const moreAboutSlider = new Swiper('.more_about_slider', {
     slidesPerView: 3.5,
     loopAdditionalSlides: 1,
     centeredSlides:true,
