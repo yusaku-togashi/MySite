@@ -659,7 +659,6 @@ header {
 }
 
 .slider .slider_contents {
-    width: 100%;
     height: 250px;
     margin: 0 auto;
 }
@@ -777,7 +776,7 @@ header {
 }
 
 
-.history .contents_image img{
+.history .content_image img{
     width: 100%;
     height:370px;
     object-fit: cover;

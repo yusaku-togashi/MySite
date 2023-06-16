@@ -55,10 +55,18 @@ $(window).scroll(function () {
 
 const newProductsSwiper = new Swiper('.slider', {
     loop:true,
-    slidesPerView: 5,
+    slidesPerView: 1.5,
     centeredSlides:true,
     loopAdditionalSlides: 3, 
     spaceBetween: 25,
+    breakpoints: {
+        1300: {
+            slidesPerView: 5,
+        },
+        768: {
+            slidesPerView:3.5,
+        },
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -66,7 +74,7 @@ const newProductsSwiper = new Swiper('.slider', {
     pagination: {
         el: '.swiper-pagination',
         clickable:true,
-      },
+    },
 });
 
 var serchButton = document.querySelectorAll("js_serch_button");
@@ -110,11 +118,16 @@ pickupButton.addEventListener("click", function(){
 });
 
 const moreAboutSlider = new Swiper('.more_about_slider', {
-    slidesPerView: 3.5,
+    slidesPerView: 1.5,
     loopAdditionalSlides: 1,
     centeredSlides:true,
     spaceBetween: 25,
     loop:true,
+    breakpoints: {
+        768: {
+            slidesPerView:3.5,
+        },
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
