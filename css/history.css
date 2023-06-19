@@ -1,0 +1,262 @@
+header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    border-bottom:1px solid #9f9f9f;
+    z-index: 999;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: auto;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.header nav {
+    position: relative;
+    width: 100%;
+}
+
+.header .logo img {
+    width: 120px;
+}
+
+.header .content {
+    display: flex;
+}
+
+.header .content .element {
+    display: flex;
+    padding-left: 40px;
+}
+
+.header .content .tab-item {
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.header .content .tab-item h2::after{
+    content: 'v';
+    color: #7f7f7f;
+    margin-left: 5px;
+}
+
+.header .content .item .online-shop {
+    color: #dc143c;
+}
+
+.header .tab-item .title {
+    cursor: pointer;
+}
+
+
+.header .tab-item .title h2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.hidden li {
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.hidden li:hover {
+    text-decoration: underline;
+    opacity: .5;
+} 
+
+.hidden {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 49px;
+    overflow: hidden;
+    max-height: 0;
+    width: 100%;
+    transition: .3s linear;
+    background-color:#fff;;
+}
+
+.tab-item .hidden.selected {
+    padding: 20px 0;
+    max-height: 200px;
+    background-color: #fff;
+}
+
+
+.header .content .help ul{
+    display: flex;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.header .content .help li{
+    padding-left: 20px;
+}
+
+.main {
+    margin:70px 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.hario.com/theme-images/about/bg01_pc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+}
+
+footer {
+    color: #000;
+    background-color:rgba(300, 200, 176, 0.2);
+    margin-top:100px;
+}
+
+footer .footer {
+    width: 100%;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.footer .heading {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.footer .heading img {
+    width: 100%;
+    max-width: 130px;
+}
+
+.footer .content {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.footer .content .topics {
+    width: 100%;
+    max-width: 250px;
+}
+
+.footer .content .title:hover {
+    opacity: .5;
+}
+
+.footer .content .topics #information {
+    padding-left: 50px;
+}
+
+.footer .content .list {
+    padding: 10px;
+}
+
+.footer .content .list li {
+    list-style: square;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+footer .content .list p {
+    position: relative;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+footer .content .list li:hover {
+    opacity: .5;
+}
+
+footer .content .list p:hover {
+    opacity: .5;
+}
+
+footer .content .list p::before {
+    content: ">";
+    position: absolute;
+    left: -7%;
+}
+
+.footer .content .topics ul {
+    padding-top: 10px;
+    line-height: 35px;
+}
+
+.footer .jump-site {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .sns ul {
+    display: flex;
+}
+
+.footer .sns li img{
+    width: 100%;
+    max-width: 35px;
+    height: auto;
+    margin-left: 7px;
+    border-radius: 50%;
+}
+
+.footer .sns li img:hover{
+    opacity: .5;
+}
+.footer .cafe {
+    margin-top: 5px;
+}
+
+.footer .cafe:hover {
+    text-decoration: underline;
+    opacity: .5;
+}
+
+.footer .policy {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .policy .site-policy p::after {
+    content: "";
+    border-right:1px solid #000 ;
+    margin-left: 25px;
+}
+
+.footer .policy p:hover {
+    text-decoration: underline;
+    opacity: .5;
+}
+
+.footer .copy-right p{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    color: #9f9f9f;
+}
