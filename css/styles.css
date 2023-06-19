@@ -1206,33 +1206,160 @@ footer {
     padding-top: 50px;
 }
 
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents {
+        flex-direction: column;
+        width: 100%;
+        max-width: 768px;
+        margin: 50px 0;
+        padding: 0;
+        border-top:3px solid #fff ;
+    }
+}
+
 .footer .foot_contents .contents_item {
     width: 100%;
+    padding-left: 20px;
     max-width: 250px;
 }
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents .contents_item{
+        width: 100%;
+        padding: 0;
+        max-width: 768px;
+    }
+}
+
+.footer .foot_contents .title {
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents .title {
+        padding: 15px;
+        border-bottom: 3px solid#fff;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents .js_box_title::before,
+    .footer .foot_contents .js_box_title::after{
+        position: absolute;
+        content: '';
+        width: 13px;
+        height: 2px;
+        background-color: #333;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents .js_box_title::before {
+        top: 50%;
+        right:5%;
+        transform: rotate(0deg);
+        transition: .5s;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents .js_box_title::after {
+        top: 50%;
+        right: 5%;
+        transform: rotate(90deg);
+        transition: .5s;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents .js_box_title.active::before {
+        top: 50%;
+        right: 5%;
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents .js_box_title.active::after {
+        top: 50%;
+        right: 5%;
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .title::after {
+        position: absolute;
+        content: '>';
+        font-size: 20px;
+        top: 28%;
+        right:5%;
+    }
+}
+
 
 .footer .foot_contents .title:hover {
     opacity: .5;
 }
 
-.footer .foot_contents .contents_item #information {
+.footer .contents_item #information {
     padding-left: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .footer .contents_item #information {
+        padding-left: 0px;
+    }
 }
 
 .footer .foot_contents .list {
     padding: 10px;
 }
 
+@media screen and (max-width: 768px){
+    .footer .foot_contents .list {
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s linear;
+        background-color: #fff;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .foot_contents .js_box_list.active {
+        max-height: 400px;
+        opacity: 1;    
+        transition: .5s linear;
+        overflow: visible;
+    }
+}
+
 .footer .foot_contents .list li {
     list-style: square;
-    margin-left: 10px;
     line-height: 30px;
 }
 
-footer .foot_contents .list p {
+@media screen and (max-width: 768px){
+    .footer .foot_contents .list li{
+        list-style: none;
+        padding: 5px 25px;
+        border-bottom: 3px solid #f5f5dc;
+    }
+}
+
+.footer .foot_contents .list .no_mark {
+    list-style: none;
     position: relative;
-    margin-left: 10px;
+    padding-top: 5px;
     line-height: 30px;
+}
+
+@media screen and (max-width: 768px){
+    footer .foot_contents .list .no_mark{
+        padding-top: 0;
+    }
 }
 
 footer .foot_contents .list li:hover {
@@ -1246,12 +1373,52 @@ footer .foot_contents .list p:hover {
 footer .foot_contents .list p::before {
     content: ">";
     position: absolute;
-    left: -7%;
+    left: -13%;
 }
 
 .footer .foot_contents .articles ul {
     padding-top: 10px;
     line-height: 35px;
+}
+
+.footer .contents_item .contact #cafe {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .footer .contents_item .contact #cafe{
+        display: block;
+    }
+}
+
+.footer .contents_item .contact li:hover {
+    opacity: .5;
+}
+
+@media screen and (max-width: 768px){
+    .footer .contents_item .contact li{
+        position: relative;
+        width: 100%;
+        max-width: 768px;
+        padding: 15px 15px;
+        border-bottom:3px solid #fff ;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .contents_item .contact li::after{
+        position: absolute;
+        content: '>';
+        top: 28%;
+        right: 5%;
+        font-size:  20px ;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .contents_item .contact #online_shop{
+        color: #dc143c;
+    }
 }
 
 .footer .service {
@@ -1268,6 +1435,12 @@ footer .foot_contents .list p::before {
     display: flex;
 }
 
+@media screen and (max-width: 768px){
+    .footer .sns{
+        margin-left: 70px;
+    }
+}
+
 .footer .sns li img{
     width: 100%;
     max-width: 35px;
@@ -1281,6 +1454,12 @@ footer .foot_contents .list p::before {
 }
 .footer .cafe {
     margin-top: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .footer .cafe{
+        display: none;
+    }
 }
 
 .footer .cafe:hover {
