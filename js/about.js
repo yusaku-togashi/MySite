@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var tabItems = document.querySelectorAll('.tab-item');
+    var items = document.querySelectorAll('.js_nav_contents');
 
-    tabItems.forEach(function(tabItem) {
-        var hiddenMenu = tabItem.querySelector('.hidden');
-        var title = tabItem.querySelector('.title');
+    items.forEach(function(item) {
+        var hiddenMenu = item.querySelector('.js_hidden');
+        var title = item.querySelector('.js_title');
         if(title){
             title.addEventListener('mouseover', function() {
                 hiddenMenu.classList.toggle('selected');

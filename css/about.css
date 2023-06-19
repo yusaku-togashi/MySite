@@ -1,10 +1,21 @@
 header {
-    position: fixed;
-    top: 0;
-    background-color: #fff;
-    width: 100%;
     border-bottom:1px solid #9f9f9f;
-    z-index: 999;
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation.fixed {
+    width: 100%;
+    height: 71px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #7f7f7f;
 }
 
 .header {
@@ -14,91 +25,126 @@ header {
     height: auto;
     margin: auto;
     padding: 20px 0;
-    background-color: #fff;
 }
 
-.header nav {
-    position: relative;
-    width: 100%;
-}
-
-.header .logo img {
+.header .nav_logo img {
     width: 120px;
 }
 
-.header .content {
+.header .nav_contents {
     display: flex;
+    width: 100%;
 }
 
-.header .content .element {
+
+.header .nav_contents .nav_element {
     display: flex;
     padding-left: 40px;
 }
 
-.header .content .tab-item {
+.header .nav_contents .nav_item {
     padding-right: 40px;
     cursor: pointer;
 }
 
-.header .content .tab-item h2::after{
+.header .nav_contents .nav_item h2::after{
     content: 'v';
     color: #7f7f7f;
     margin-left: 5px;
 }
 
-.header .content .item .online-shop {
+.header .nav_contents .online_shop_tab .online_shop {
     color: #dc143c;
-}
-
-.header .tab-item .title {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px){
+    .header .online_shop_tab{
+       display: none;
+    }
+}
 
-.header .tab-item .title h2:hover {
+.header .nav_contents .online_shop_tab .online_shop:hover {
+    opacity: .5;
+    text-decoration: underline;
+}
+
+.header .nav_item .title {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .header .nav_item{
+       display: none;
+    }
+}
+
+.header .nav_item .title h2:hover {
     cursor: pointer;
     text-decoration: underline;
     opacity: 0.5;
 }
 
-.hidden li {
+.header .nav_item p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.hidden_item li {
     margin-left: 40px;
     font-size: 15px;
 }
 
-.hidden li:hover {
+.hidden_item li:hover {
     text-decoration: underline;
     opacity: .5;
 } 
 
-.hidden {
+.hidden_item {
     display: flex;
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 49px;
+    top: 71px;
     overflow: hidden;
     max-height: 0;
     width: 100%;
+    background-color: #fff;
     transition: .3s linear;
-    background-color:#fff;;
 }
 
-.tab-item .hidden.selected {
+.nav_item .hidden_item.selected {
     padding: 20px 0;
     max-height: 200px;
-    background-color: #fff;
+    width: 100%;
 }
 
+.nav_item .hidden_list {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    margin: auto;
+}
 
-.header .content .help ul{
+.header .nav_contents .nav_help ul{
     display: flex;
     font-size: 12px;
     padding-left: 40px;
+    min-width: 270px;
 }
 
-.header .content .help li{
+@media screen and (max-width: 768px){
+    .header .nav_contents .nav_help ul{
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+    }
+}
+
+.header .nav_contents .nav_help li{
     padding-left: 20px;
 }
 

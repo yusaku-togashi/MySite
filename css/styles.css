@@ -817,6 +817,10 @@ header {
     border: 1px solid #000;
 }
 
+.history .detail p:hover{
+    opacity: .5;
+}
+
 .history .detail p::after {
     content: '>';
     color: #7f7f7f;
