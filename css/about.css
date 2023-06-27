@@ -159,6 +159,12 @@ header {
     background-size: cover;
 }
 
+@media screen and (max-width: 768px){
+    .main{
+        background-image: url('https://www.hario.com/theme-images/about/bg01_sp.jpg');
+    }
+}
+
 .about_us {
     width: 100%;
     max-width: 1200px;
