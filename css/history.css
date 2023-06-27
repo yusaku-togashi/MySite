@@ -323,45 +323,85 @@ header {
 
 
 .company_history .company_1920s .history_contents_1920s {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .company_history .company_1920s .history_contents_1920s {
+       height: 600px;
+    }
+}
+
+
+.company_history .company_1920s .history_contents_1920s .background_image {
     background-image: url("https://www.hario.com/theme-images/about/history/row01_img01_pc.jpg");
     background-size: cover;
     background-position: center;
-    position: relative;
+    height: 100%;
     width: 100%;
-    height: 900px;
+}
+
+
+@media screen and (max-width: 768px){
+    .company_history .company_1920s .history_contents_1920s .background_image {
+       height: 400px;
+       width: 100%;
+    }
 }
 
 .history_contents_1920s .heading {
     position: absolute;
-    top: 32%;
-    right: 70%;
+    top: 42%;
+    right: 75%;
     font-size: 75px;
     color: #7f7f7f;
     opacity: .8;
 }
 
-.history_contents_1920s .contents_item .title {
+@media screen and (max-width: 768px){
+    .company_history .company_1920s .heading {
+       top: 68%;
+       font-size: 40px;
+       left: 2%;
+    }
+}
+
+.history_contents_1920s .contents_item {
     position: absolute;
     top: 60%;
-    right: 76%;
+    right: 60%;
     font-size: 20px;
     opacity: .8;
 }
 
+@media screen and (max-width: 768px){
+    .company_history .company_1920s .contents_item {
+       top: 78%;
+       left: 3%;
+       font-size: 13px;
+       line-height: 25px;
+       width: 100%;
+    }
+}
+
 .history_contents_1920s .contents_item .contents_text {
-    position: absolute;
-    top: 64%;
-    right: 63%;
-    font-size: 18px;
-    line-height: 35px;
-    opacity: .8;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 .company_1940s {
-    position: relative;
     display: flex;
     width: 100%;
     height: 900px;
+}
+
+@media screen and (max-width: 768px){
+    .company_1940s {
+        flex-direction: column;
+        height: 700px;
+    }
 }
 
 .company_1940s .history_contents_image {
@@ -372,26 +412,50 @@ header {
     height: 900px;
 }
 
+@media screen and (max-width: 768px){
+    .company_1940s .history_contents_image {
+       width: 100%;
+       height: 400px;
+    }
+}
+
 .history_contents_1940s .heading {
-    position: absolute;
-    top: 22%;
-    left: 55%;
     font-size: 75px;
     color: #7f7f7f;
     opacity: .8;
+    padding: 200px 100px 0 100px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_1940s .heading {
+       padding: 20px 20px 0px 20px;
+       font-size: 40px;
+    }
 }
 
 .history_contents_1940s .contents_item {
-    position: absolute;
-    top: 50%;
-    left: 55%;
+    padding: 50px 100px;
     font-size: 20px;
     opacity: .8;
     line-height: 35px;
 }
 
+@media screen and (max-width: 768px){
+    .history_contents_1940s .contents_item {
+       padding: 0 20px 20px 20px;
+       font-size: 13px;
+       line-height: 25px;
+    }
+}
+
 .history_contents_1940s .contents_item .title {
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_1940s .contents_item .title {
+       padding-top: 5px;
+    }
 }
 
 .history_contents_1940s .contents_item .contents_text {
@@ -399,12 +463,29 @@ header {
 }
 
 .company_history .company_1950s .history_contents_1950s {
-    background-image: url("https://www.hario.com/theme-images/about/history/row01_img03.jpg");
-    background-size: cover;
-    background-position: center;
     position: relative;
     width: 100%;
     height: 900px;
+}
+
+@media screen and (max-width: 768px){
+    .company_history .company_1950s .history_contents_1950s {
+       height: 700px;
+    }
+}
+
+.company_history .company_1950s .background_image {
+    background-image: url("https://www.hario.com/theme-images/about/history/row01_img03.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .company_history .company_1950s .background_image {
+        height: 400px;
+    }
 }
 
 .history_contents_1950s .heading {
@@ -415,6 +496,15 @@ header {
     color: #fff;
 }
 
+@media screen and (max-width: 768px){
+    .company_history .history_contents_1950s .heading {
+        color: #7f7f7f;
+        font-size: 40px;
+        top: 60%;
+        left: 2%;
+    }
+}
+
 .history_contents_1950s .contents_item {
     position: absolute;
     top: 50%;
@@ -423,8 +513,23 @@ header {
     color: #fff;
 }
 
+@media screen and (max-width: 768px){
+    .company_history .history_contents_1950s .contents_item {
+        color: #000;
+        font-size: 13px;
+        top: 70%;
+        left: 3%;
+    }
+}
+
 .history_contents_1950s .contents_item .title {
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .company_history .contents_item .title {
+        padding-top: 10px;
+    }
 }
 
 .history_contents_1950s .contents_item .contents_text {
@@ -432,14 +537,37 @@ header {
     line-height: 35px;
 }
 
+@media screen and (max-width: 768px){
+    .history_contents_1950s .contents_item .contents_text {
+        line-height: 25px;
+    }
+}
+
 .company_1960s {
-    position: relative;
     display: flex;
     width: 100%;
     height: 900px;
 }
 
-.company_1960s .history_contents_image{
+@media screen and (max-width: 768px){
+    .company_1960s {
+        flex-direction: column;
+        height: 700px;
+    }
+}
+
+.company_1960s .history_contents_1960s {
+    width: calc(100%/2);
+}
+
+@media screen and (max-width: 768px){
+    .company_1960s .history_contents_1960s {
+       width: 100%;
+       order: 2;
+    }
+}
+
+.company_1960s .history_contents_image {
     background-image: url("https://www.hario.com/theme-images/about/history/row01_img04_sp.jpg");
     width: calc(100%/2);
     background-size: cover;
@@ -448,32 +576,51 @@ header {
     order: 2;
 }
 
-.history_contents_1960s {
-    width: 100%;
-    max-width: calc(100%/2);
-    order: 1;
+@media screen and (max-width: 768px){
+    .company_1960s .history_contents_image {
+       width: 100%;
+       height: 400px;
+       order: 1;
+    }
 }
 
 .history_contents_1960s .heading {
-    position: absolute;
-    top: 15%;
-    right: 76%;
     font-size: 75px;
     color: #7f7f7f;
     opacity: .8;
+    padding: 200px 100px 0 100px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_1960s .heading {
+       padding: 20px 20px 0px 20px;
+       font-size: 40px;
+    }
 }
 
 .history_contents_1960s .contents_item {
-    position: absolute;
-    top: 42%;
-    right: 60%;
+    padding: 50px 100px;
     font-size: 20px;
     opacity: .8;
     line-height: 35px;
 }
 
+@media screen and (max-width: 768px){
+    .history_contents_1960s .contents_item {
+       padding: 0 20px 20px 20px;
+       font-size: 13px;
+       line-height: 25px;
+    }
+}
+
 .history_contents_1960s .contents_item .title {
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_1960s .contents_item .title {
+       padding-top: 5px;
+    }
 }
 
 .history_contents_1960s .contents_item .contents_text {
@@ -481,32 +628,74 @@ header {
 }
 
 .company_history .company_1970s .history_contents_1970s {
-    background-image: url("https://www.hario.com/theme-images/about/history/row01_img05.jpg");
-    background-size: cover;
-    background-position: center;
     position: relative;
     width: 100%;
     height: 900px;
 }
 
+@media screen and (max-width: 768px){
+    .company_history .company_1970s .history_contents_1970s {
+       height: 750px;
+    }
+}
+
+.company_history .company_1970s .background_image {
+    background-image: url("https://www.hario.com/theme-images/about/history/row01_img03.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .company_history .company_1970s .background_image {
+        height: 400px;
+    }
+}
+
 .history_contents_1970s .heading {
     position: absolute;
     top: 22%;
-    right: 75%;
+    right: 72%;
     font-size: 75px;
     color: #fff;
 }
 
+@media screen and (max-width: 768px){
+    .company_history .history_contents_1970s .heading {
+        color: #7f7f7f;
+        font-size: 40px;
+        top: 60%;
+        left: 2%;
+    }
+}
+
 .history_contents_1970s .contents_item {
     position: absolute;
-    top: 50%;
-    right: 66%;
+    top: 43%;
+    right: 58%;
     font-size: 20px;
     color: #fff;
 }
 
+@media screen and (max-width: 768px){
+    .company_history .history_contents_1970s .contents_item {
+        color: #000;
+        font-size: 13px;
+        top: 70%;
+        left: 3%;
+        width: 100%;
+    }
+}
+
 .history_contents_1970s .contents_item .title {
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .company_history .contents_item .title {
+        padding-top: 10px;
+    }
 }
 
 .history_contents_1970s .contents_item .contents_text {
@@ -514,41 +703,77 @@ header {
     line-height: 35px;
 }
 
+@media screen and (max-width: 768px){
+    .history_contents_1970s .contents_item .contents_text {
+        line-height: 25px;
+    }
+}
+
 .company_1980s {
-    position: relative;
     display: flex;
     width: 100%;
-    height: 900px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .company_1980s {
+        flex-direction: column;
+        height: 700px;
+    }
 }
 
 .company_1980s .history_contents_image {
-    background-image: url("https://www.hario.com/theme-images/about/history/row01_img06_pc.jpg");
+    background-image: url("https://www.hario.com/theme-images/about/history/row01_img06_sp.jpg");
     width: calc(100%/2);
     background-size: cover;
     background-position: center;
     height: 900px;
 }
 
+@media screen and (max-width: 768px){
+    .company_1980s .history_contents_image {
+       width: 100%;
+       height: 400px;
+    }
+}
+
 .history_contents_1980s .heading {
-    position: absolute;
-    top: 12%;
-    left: 55%;
     font-size: 75px;
     color: #7f7f7f;
     opacity: .8;
+    padding: 200px 100px 0 100px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_1980s .heading {
+       padding: 20px 20px 0px 20px;
+       font-size: 40px;
+    }
 }
 
 .history_contents_1980s .contents_item {
-    position: absolute;
-    top: 40%;
-    left: 55%;
+    padding: 50px 100px;
     font-size: 20px;
     opacity: .8;
     line-height: 35px;
 }
 
+@media screen and (max-width: 768px){
+    .history_contents_1980s .contents_item {
+       padding: 0 20px 20px 20px;
+       font-size: 13px;
+       line-height: 25px;
+    }
+}
+
 .history_contents_1980s .contents_item .title {
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_1980s .contents_item .title {
+       padding-top: 5px;
+    }
 }
 
 .history_contents_1980s .contents_item .contents_text {
@@ -556,44 +781,88 @@ header {
 }
 
 .company_history .company_1990s .history_contents_1990s {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .company_history .company_1990s .history_contents_1990s  {
+       height: 900px;
+    }
+}
+
+.company_history .company_1990s .history_contents_1990s .background_image {
     background-image: url("https://www.hario.com/theme-images/about/history/row01_img07_pc.jpg");
     background-size: cover;
     background-position: center;
-    position: relative;
-    width: 100%;
     height: 900px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px){
+    .company_history .company_1990s .history_contents_1990s .background_image {
+       height: 400px;
+       width: 100%;
+    }
 }
 
 .history_contents_1990s .heading {
     position: absolute;
-    top: 10%;
+    top: 28%;
     right: 75%;
     font-size: 75px;
     color: #fff;
+    opacity: .8;
+}
+
+@media screen and (max-width: 768px){
+    .company_history .company_1990s .heading {
+       top: 48%;
+       font-size: 40px;
+       left: 2%;
+       color: #7f7f7f;
+    }
 }
 
 .history_contents_1990s .contents_item {
     position: absolute;
-    top: 35%;
-    right: 63%;
-    font-size: 20px;
+    top: 45%;
+    right: 60%;
+    font-size: 18px;
+    line-height: 35px;
+    opacity: .8;
     color: #fff;
-}
-
-.history_contents_1990s .contents_item .title {
-    padding-top: 20px;
 }
 
 .history_contents_1990s .contents_item .contents_text {
     padding-left: 20px;
-    line-height: 35px;
+}
+
+
+@media screen and (max-width: 768px){
+    .company_history .company_1990s .contents_item {
+       top: 55%;
+       left: 3%;
+       font-size: 13px;
+       line-height: 25px;
+       color: #000;
+       width: 100%;
+    }
 }
 
 .company_2000s {
-    position: relative;
     display: flex;
     width: 100%;
-    height: 900px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .company_2000s {
+        flex-direction: column;
+        height: 700px;
+    }
 }
 
 .company_2000s .history_contents_image {
@@ -604,41 +873,81 @@ header {
     height: 900px;
 }
 
+@media screen and (max-width: 768px){
+    .company_2000s .history_contents_image {
+       width: 100%;
+       height: 400px;
+    }
+}
+
 .history_contents_2000s .heading {
-    position: absolute;
-    top: 12%;
-    left: 55%;
     font-size: 75px;
     color: #7f7f7f;
     opacity: .8;
+    padding: 200px 100px 0 100px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_2000s .heading {
+       padding: 20px 20px 0px 20px;
+       font-size: 40px;
+    }
 }
 
 .history_contents_2000s .contents_item {
-    position: absolute;
-    top: 40%;
-    left: 55%;
+    padding: 50px 100px;
     font-size: 20px;
     opacity: .8;
     line-height: 35px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_2000s .contents_item {
+       padding: 0 20px 20px 20px;
+       font-size: 13px;
+       line-height: 25px;
+    }
 }
 
 .history_contents_2000s .contents_item .title {
     padding-top: 20px;
 }
 
+@media screen and (max-width: 768px){
+    .history_contents_2000s .contents_item .title {
+       padding-top: 5px;
+    }
+}
+
 .history_contents_2000s .contents_item .contents_text {
     padding-left: 20px;
 }
 
-
 .company_2010s {
-    position: relative;
     display: flex;
     width: 100%;
-    height: 2000px;
+    height: auto;
 }
 
-.company_2010s .history_contents_image{
+@media screen and (max-width: 768px){
+    .company_2010s {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.company_2010s .history_contents_2010s {
+    width: calc(100%/2);
+}
+
+@media screen and (max-width: 768px){
+    .company_2010s .history_contents_2010s {
+       width: 100%;
+       order: 2;
+    }
+}
+
+.company_2010s .history_contents_image {
     background-image: url("https://www.hario.com/theme-images/about/history/row01_img09_sp.jpg");
     width: calc(100%/2);
     background-size: cover;
@@ -647,32 +956,52 @@ header {
     order: 2;
 }
 
-.history_contents_2010s {
-    width: 100%;
-    max-width: calc(100%/2);
-    order: 1;
+@media screen and (max-width: 768px){
+    .company_2010s .history_contents_image {
+       width: 100%;
+       height: 400px;
+       order: 1;
+    }
 }
 
 .history_contents_2010s .heading {
-    position: absolute;
-    top: 0%;
-    right: 76%;
     font-size: 75px;
     color: #7f7f7f;
     opacity: .8;
+    padding: 200px 100px 0 100px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_2010s .heading {
+       padding: 20px 20px 0px 20px;
+       font-size: 40px;
+    }
 }
 
 .history_contents_2010s .contents_item {
-    position: absolute;
-    top: 13%;
-    right: 60%;
-    font-size: 20px;
+    padding: 50px 100px;
+    font-size: 17px;
     opacity: .8;
     line-height: 35px;
+    
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_2010s .contents_item {
+       padding: 0 20px 20px 20px;
+       font-size: 13px;
+       line-height: 25px;
+    }
 }
 
 .history_contents_2010s .contents_item .title {
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .history_contents_2010s .contents_item .title {
+       padding-top: 5px;
+    }
 }
 
 .history_contents_2010s .contents_item .contents_text {
@@ -681,12 +1010,23 @@ header {
 
 .history_contents_2010s .about_factory {
     text-align: center;
-    padding: 50px 150px;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 768px){
+    .history_contents_2010s .about_factory {
+       margin: auto;
+       margin-top: 50px;
+       margin-bottom: 30px;
+       max-width: 220px;
+    }
 }
 
 .history_contents_2010s .about_factory p {
     position: relative;
-    padding: 5px 25px;
+    padding: 5px 15px;
     border: 1px solid #000;
 }
 
@@ -720,12 +1060,20 @@ header {
     font-size: 23px;
 }
 
-.hario_history_movie .history_youtube {
-    width: 100%;
-    max-width: 560px;
+.history_youtube {
+    position: relative;
+    padding-bottom: 500px;
+    max-width: 750px;
     margin: auto;
-    height: auto;
-    padding-top: 100px;
+}
+  
+.history_youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px;
 }
 
 .products_history_contents {
