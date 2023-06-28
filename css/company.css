@@ -228,9 +228,267 @@ header {
     line-height: 45px;
 }
 
+.introduce_company {
+    margin-top: 100px;
+}
+
+.introduce_company .introduce_item {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.introduce_item .top_block_image {
+    width: calc(100%/2);
+    height: auto;
+}
+
+.introduce_item .top_block_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.introduce_item .introduce_article_right {
+    width: calc(100%/2);
+    height: auto;
+    padding: 150px 100px;
+}
+
+.introduce_article_right .heading {
+    font-size: 30px;
+}
+
+.introduce_article_right .introduce_article_text {
+    font-size: 19px;
+    max-width: 590px;
+    padding-top: 50px;
+    line-height: 36px;
+}
+
+.introduce_item .middle_block_image {
+    width: calc(100%/2);
+    height: auto;
+    order: 2;
+}
+
+.introduce_item .middle_block_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.introduce_item .introduce_article_left {
+    width: calc(100%/2);
+    height: auto;
+}
+
+.introduce_item .introduce_article_left .text_block {
+    margin: 0 0 0 auto;
+    max-width: 787px;
+    padding: 150px 100px;
+}
+
+.introduce_article_left .heading {
+    font-size: 30px;
+}
+
+.introduce_article_left .introduce_article_text {
+    font-size: 19px;
+    max-width: 590px;
+    padding-top: 50px;
+    line-height: 36px;
+}
+
+.glass {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: #fff;
+    color: #3f3f3f;
+}
+
+@media screen and (max-width: 768px){
+    .glass {
+       margin-top: 50px;
+       padding: 30px 0;
+    }
+}
+
+.glass .content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.glass .content .head_logo {
+    width: 140px;
+    height: auto;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .glass .content .head_logo{
+       width: 160px;
+    }
+}
+
+.glass .content .item {
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .glass .content .item{
+        font-size: 12px;
+    }
+}
+
+.glass .content .show_more {
+    position: relative;
+    height: auto;
+    margin: auto;
+    padding: 10px 10px;
+    width: 500px;
+}
+
+@media screen and (max-width: 768px){
+    .glass .content .show_more{
+       width: 200px;
+       padding: 10px 10px;
+       font-size: 12px;
+    }
+}
+
+.glass .content .show_more p::after{
+    content: '>';
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    font-size: 22px;
+    color: #7f7f7f;
+
+}
+
+@media screen and (max-width: 768px){
+    .glass .content .show_more p::after{
+       font-size: 15px;
+       top: 15%;
+    }
+}
+
+.glass .content .show_more:hover {
+    opacity: .5;
+}
+
+.company_overview {
+    margin-top: 50px;
+}
+
+.company_overview .heading{
+    width: 100%;
+    height: 55px;
+    background-color: #5f5f5f;
+}
+
+.company_overview .heading h4 {
+    color: #fff;
+    font-size: 25px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.company_overview_contents .contents_list {
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.company_overview_contents .contents_item {
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid #7f7f7f;
+    font-size: 18px;
+    height: 100px;
+}
+
+.company_overview_contents .contents_item .list_title {
+    width: 400px;
+}
+
+.relation_company {
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.relation_company p {
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+    border: 1.5px solid #000;
+}
+
+.relation_company p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    bottom: 0;
+    right: 10%;
+    margin: auto;
+    border-top: 2px solid #5f5f5f;
+    border-right: 2px solid #5f5f5f;
+    transform: rotate(45deg);
+}
+
+.relation_company p:hover {
+    opacity: .5;
+}
+
+
+.google_access_map {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.google_access_map .heading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.google_access_map .heading h5 {
+    padding: 10px 0;
+    background-color: #7f7f7f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.google_map {
+    position: relative;
+    padding-bottom: 550px;
+    max-width: 900px;
+    margin: auto;
+}
+  
+.google_map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px 30px 0 30px;
+}
+
 footer {
     color: #000;
-    background-color: #9f9f9f;
+    background-color: #e9e9e9;
     margin-top:100px;
 }
 
