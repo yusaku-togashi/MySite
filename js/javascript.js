@@ -12,12 +12,19 @@ document.addEventListener('DOMContentLoaded', function() {
     items.forEach(function(item) {
         var hiddenMenu = item.querySelector('.js_hidden');
         var title = item.querySelector('.js_title');
-        if(title){
+        if(title || hiddenMenu){
             title.addEventListener('mouseover', function() {
                 hiddenMenu.classList.toggle('selected');
             });
+            hiddenMenu.addEventListener('mouseover', function() {
+                hiddenMenu.classList.toggle('selected');
+            });
+
 
             title.addEventListener('mouseout', function() {
+                hiddenMenu.classList.remove('selected');
+            });
+            hiddenMenu.addEventListener('mouseout', function() {
                 hiddenMenu.classList.remove('selected');
             });
         }
