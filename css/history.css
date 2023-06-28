@@ -31,6 +31,12 @@ header {
     width: 120px;
 }
 
+@media screen and (max-width: 768px){
+    .header .nav_logo{
+       padding-left: 20px;
+    }
+}
+
 .header .nav_contents {
     display: flex;
     width: 100%;
@@ -1560,7 +1566,6 @@ header {
     grid-column: 1/5;
 }
 
-
 footer {
     color: #000;
     background-color:rgba(300, 200, 176, 0.2);
@@ -1573,10 +1578,22 @@ footer {
     padding-top: 120px;
 }
 
+@media screen and (max-width:768px){
+    .footer {
+        padding-top: 0;
+    }
+}
+
 .footer .heading {
     text-align: center;
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width:768px){
+    .footer .heading{
+        display: none;
+    }
 }
 
 .footer .heading img {
@@ -1627,6 +1644,7 @@ footer {
     .footer .foot_contents .title {
         padding: 15px;
         border-bottom: 3px solid#fff;
+        font-size: 13px;
     }
 }
 
@@ -1732,6 +1750,7 @@ footer {
         list-style: none;
         padding: 5px 25px;
         border-bottom: 3px solid #f5f5dc;
+        font-size: 13px;
     }
 }
 
@@ -1788,6 +1807,7 @@ footer .foot_contents .list p::before {
         max-width: 768px;
         padding: 15px 15px;
         border-bottom:3px solid #fff ;
+        font-size: 13px;
     }
 }
 
