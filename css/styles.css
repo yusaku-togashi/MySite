@@ -1483,7 +1483,7 @@ footer .foot_contents .list p::before {
 
 }
 
-.footer .policy_contents .site-policy p::after {
+.footer .policy_contents .site_policy p::after {
     content: "";
     border-right:1px solid #000 ;
     margin-left: 25px;
@@ -1494,7 +1494,7 @@ footer .foot_contents .list p::before {
     opacity: .5;
 }
 
-.footer .copy-right p{
+.footer .copy_right p{
     width: 100%;
     max-width: 300px;
     height: auto;
