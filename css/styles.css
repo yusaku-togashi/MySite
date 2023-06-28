@@ -1336,7 +1336,6 @@ footer {
         max-height: 400px;
         opacity: 1;    
         transition: .5s linear;
-        overflow: visible;
     }
 }
 
