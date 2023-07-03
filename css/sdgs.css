@@ -6,7 +6,7 @@ header {
     position: relative;
 }
 
-.navigation.fixed {
+.navigation {
     width: 100%;
     height: 71px;
     background-color: #fff;
@@ -118,7 +118,7 @@ header {
     max-height: 0;
     width: 100%;
     background-color: #fff;
-    transition: .5s linear;
+    transition: .3s linear;
 }
 
 .nav_item .hidden_item.selected {
@@ -152,6 +152,235 @@ header {
 
 .header .nav_contents .nav_help li{
     padding-left: 20px;
+}
+
+.st_main {
+    background-image: url("https://www.hario.com/theme-images/about/sdgs/head01_pc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: 340px;
+    margin-top: 70px;
+}
+
+.st_main .st_top {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.st_main .st_agenda ul {
+    display: flex;
+    font-size: 12px;
+    color: #7f7f7f;
+}
+
+.st_main .st_agenda li {
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.st_main .st_agenda a {
+    position: relative;
+}
+
+.st_main .st_agenda a:hover {
+    opacity: .5;
+}
+
+.st_main .st_agenda a::after {
+    position: absolute;
+    content: '>';
+    bottom: -6px;
+    right: -18px;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 768px){
+    .st_main .st_agenda{
+       display: none;
+    }
+}
+
+.st_main .st_heading {
+    text-align: center;
+    padding:100px 0;
+}
+
+
+@media screen and (max-width: 768px){
+    .st_main .st_heading {
+       padding: 50px 0;
+    }
+}
+
+
+.st_main .st_heading .st_title {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .st_main .st_heading .st_title{
+       font-size: 20px;
+    }
+}
+
+.st_main .st_heading .st_subtitle {
+    font-size: 14px;
+    padding-top: 10px ;
+    color: #9f9f9f;
+}
+
+
+@media screen and (max-width: 768px){
+    .st_main .st_heading .st_subtitle{
+       font-size: 10px;
+    }
+}
+
+.sdgs_explain {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.sdgs_explain .heading {
+    font-size: 18px;
+    line-height: 40px;
+} 
+
+.sdgs_detail_banner img{
+    width: 100%;
+    max-width: 1200px;;
+    margin-top: 100px;
+}
+
+.sdgs_achievement .sdgs_achievement_tab{
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.sdgs_achievement .sdgs_achievement_tab img {
+    width: 190px;
+}
+
+.sdgs_achievement_contents {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin:auto;
+}
+
+.sdgs_achievement_contents .heading{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 70px;
+}
+
+.sdgs_achievement_contents .subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sdgs_achievement_contents .contents_item {
+    margin-top: 50px;
+}
+
+.sdgs_achievement_contents .production_process_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list_item {
+    width: 100%;
+    max-width: 270px;
+    margin-top: 50px;
+    height: auto;
+}
+
+.list_item .list_img {
+    display: flex;
+    width: 100%;
+}
+
+.list_item .list_img p {
+    width: 90px;
+    height: 90px;
+}
+
+.list_item .list_title {
+    width: 100%;
+    height: 130px;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.list_item .list_title h4 {
+    text-align: center;
+}
+
+.list_item .list_img .img_skyblue {
+    background-color: #87cefa;
+}
+
+.list_item .list_img .img_brown {
+    background-color: #d26900;
+}
+
+.list_item .list_img .img_green {
+    background-color: #009000;
+}
+
+.list_item .list_img .img_blue{
+    background-color: #2222ff;
+}
+
+.list_item .list_img .img_yellow{
+    background-color: #ffdd00;
+}
+
+.list_item .list_img .img_orange{
+    background-color: #ffa500;
+}
+
+.list_item .list_img .img_pink{
+    background-color: #ff7aad;
+}
+
+.bg_pink {
+    background-color: #ff7aad;
+}
+
+.bg_green {
+    background-color: #008000;
+}
+
+.bg_yellow {
+    background-color: #ffdd00;
+}
+
+.bg_skyblue {
+    background-color: #87cefa;
+}
+
+.bg_orange{
+    background-color: #ffa500;
+}
+
+.bg_brown {
+    background-color: #d26900;
+}
+
+.bg_blue {
+    background-color: #2222ff
 }
 
 footer {
