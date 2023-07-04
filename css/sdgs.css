@@ -290,7 +290,8 @@ header {
     margin-top: 50px;
 }
 
-.sdgs_achievement_contents .production_process_list {
+.sdgs_achievement_contents .production_process_list,
+.company_environment_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -301,6 +302,7 @@ header {
     max-width: 270px;
     margin-top: 50px;
     height: auto;
+    position: relative;
 }
 
 .list_item .list_img {
@@ -321,6 +323,12 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
+}
+
+.list_item .item_transition_block {
+    transition:.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    transform: scale(1,1);  
+    transition: .2s linear;
 }
 
 .list_item .list_title h4 {
@@ -381,6 +389,38 @@ header {
 
 .bg_blue {
     background-color: #2222ff
+}
+
+
+.list_item .item_mask{
+	position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index: 2;
+	left:0;
+	top: 0;
+	opacity:1;
+	transition: .2s ease-in;
+    transition-delay: .1s;
+    overflow: hidden;
+    transform: translateY(0);
+	background:#7e7e7e;
+    color: #fff;
+	width:100%;
+    height: 0;
+    font-size: 20px
+}
+
+.list_item:hover .item_mask{
+    opacity:1;
+	transform: translateY(0);
+    height: 100%;
+}
+
+.list_item:hover .item_transition_block{
+    transform: scale(1, 0);
+    transform-origin: center;
 }
 
 footer {
