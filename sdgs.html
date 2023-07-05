@@ -5,10 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>git practice</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/sdgs.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-	<script src="/js/test.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/sdgs.css">
 </head>
 <body>
     <header class="heading">
@@ -348,7 +349,15 @@
                     <div class="contents_item">
                         <ul class="company_environment_list">
                             <li class="list_item">
-                                <a href=""><p class="item_mask">取り組みをもっと見る ></p></a>
+                                <ul class="info-list">
+                                    <li><a href="#info-1" class="info">
+                                    <dl><dd> 取り組みをもっと見る ></dd></dl>
+                                    </a></li>
+                                </ul>
+                                <section id="info-1" class="hide-area">
+                                    <h2>お知らせ</h2>
+                                    <p> おしらせの内容が入ります。</p>
+                                </section>
                                 <div class="item_transition_block">
                                     <div class="list_img">
                                         <p><img src="https://www.hario.com/theme-images/about/sdgs/sdgs-img_3.png" alt=""></p>
@@ -574,6 +583,7 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/sdgs.js"></script>
 </body>
