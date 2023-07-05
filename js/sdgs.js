@@ -73,3 +73,13 @@ $(document).ready(function() {
       }, 500);
     });
 });
+
+var footBoxTitles = document.querySelectorAll('.js_box_title');
+
+footBoxTitles.forEach(function(boxTitle) {
+    boxTitle.addEventListener('click', function() {
+        var footBox = boxTitle.nextElementSibling
+        footBox.classList.toggle('active');
+        boxTitle.classList.toggle('active');
+    });
+});
