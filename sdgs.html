@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>git practice</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -159,7 +158,41 @@
                 <div class="contents_item">
                     <ul class="production_process_list">
                         <li class="list_item">
-                            <a href="//"><p class="item_mask">取り組みをもっと見る ></p></a>
+                            <button id="op_modal">取り組みをもっと見る ></button>
+                            <section id="modal" class="modal">
+                                <div class="modal_bg"></div>
+                                <div class="modal_wrapper">
+                                    <div class="modal_contents">
+                                        <div class="heading">
+                                            <h5>梱包資材の脱プラについて</h5>
+                                        </div>
+                                        <div class="modal_contents_image">
+                                            <img src="https://www.hario.com/theme-images/about/sdgs/sdgs-img_12.png" alt="">
+                                            <img src="https://www.hario.com/theme-images/about/sdgs/sdgs-img_14.png" alt="">
+                                            <img src="https://www.hario.com/theme-images/about/sdgs/sdgs-img_15.png" alt="">
+                                        </div>
+                                        <div class="modal_explain">
+                                            <p>■脱プラに向け、製品の梱包仕様の見直しを行なっています。</p>
+                                            <ul class="modal_explain_image">
+                                                <li>
+                                                    <img src="https://www.hario.com/theme-images/about/sdgs/image13.jpg" alt="">
+                                                </li>
+                                                <li class="include_text">
+                                                    <img src="https://www.hario.com/theme-images/about/sdgs/image1.jpg" alt="">
+                                                    <p>ドレッシングボトルスリム</p>
+                                                </li>
+                                                <li class="include_text">
+                                                    <img src="https://www.hario.com/theme-images/about/sdgs/image12.jpg" alt="">
+                                                    <p>耐熱ガラス製ボウル</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="cl_modal" class="cl_modal">
+                                    <p>×</p>
+                                    </div>
+                                </div>
+                            </section>
                             <div class="item_transition_block">
                                 <div class="list_img">
                                     <p class="bgUD"><span class="mask"><img src="https://www.hario.com/theme-images/about/sdgs/sdgs-img_12.png" alt=""></span></p>
@@ -354,15 +387,7 @@
                     <div class="contents_item">
                         <ul class="company_environment_list">
                             <li class="list_item">
-                                <ul class="info-list">
-                                    <li><a href="#info-1" class="info">
-                                    <dl><dd> 取り組みをもっと見る ></dd></dl>
-                                    </a></li>
-                                </ul>
-                                <section id="info-1" class="hide-area">
-                                    <h2>お知らせ</h2>
-                                    <p> おしらせの内容が入ります。</p>
-                                </section>
+                                <a href="//"><p class="item_mask">取り組みをもっと見る ></p></a>
                                 <div class="item_transition_block">
                                     <div class="list_img">
                                         <p><img src="https://www.hario.com/theme-images/about/sdgs/sdgs-img_3.png" alt=""></p>
@@ -587,9 +612,9 @@
         <small class="copy_right"><p>Copyright © HARIO CO., LTD. All Rights Reserved</p></small>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/sdgs.js"></script>
 </body>
 </html>

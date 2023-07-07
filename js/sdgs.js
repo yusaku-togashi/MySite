@@ -23,18 +23,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-window.addEventListener('DOMContentLoaded', function(){
+const modal = document.getElementById('modal');
+const opModal = document.getElementById('op_modal');
+const clModal = document.getElementById('cl_modal');
+const body = document.body;
+const toggle = [opModal,clModal];
 
-    $(".info").modaal({
-        overlay_close:true,
-        before_open:function(){
-            $('html').css('overflow-y','hidden');
-        },
-        after_close:function(){
-            $('html').css('overflow-y','scroll');
-        }
-    });
-});
+for (let i = 0; i<toggle.length ; i++){
+  toggle[i].addEventListener('click',function(){
+    modal.classList.toggle('is_show');
+    body.classList.toggle('is_show')
+  },false);
+}
 
 $(document).ready(function() {
     

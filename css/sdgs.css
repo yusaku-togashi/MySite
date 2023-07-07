@@ -1,3 +1,7 @@
+body.is_show {
+    overflow: hidden;
+}
+
 header {
     border-bottom:1px solid #9f9f9f;
 }
@@ -582,7 +586,7 @@ header {
 }
 
 
-.list_item .info-list{
+.list_item #op_modal{
 	position: absolute;
     display: flex;
     justify-content: center;
@@ -602,7 +606,7 @@ header {
     font-size: 20px
 }
 
-.list_item:hover .info-list{
+.list_item:hover #op_modal{
     opacity:1;
 	transform: translateY(0);
     height: 100%;
@@ -613,20 +617,80 @@ header {
     transform-origin: center;
 }
 
-.hide-area{
-	display: none;
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    color: #fff;
+    overflow-y: scroll;
+}
+  
+.modal_wrapper {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    border-radius: 16px;
+    width:100%;  
 }
 
-.modaal-close:after, 
-.modaal-close:before{
-	background:#ccc;	
+.modal_bg {
+    width: 100%;
+    height: 2800px;
+    background-color:rgba(0, 0, 0, 0.7);
 }
 
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before{
-	background:#666;
+.cl_modal {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    cursor: pointer;
+}
+
+.cl_modal p {
+    font-size: 50px;
+}
+  
+.is_show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_contents .modal_contents_image {
+    width: 375px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.modal_contents_image img {
+    width: 120px;
+    padding: 10px;
+}
+
+.modal_contents .modal_explain {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.modal_contents .modal_explain_image {
+    margin-top: 30px;
+}
+
+.modal_contents .modal_explain_image img {
+   scale: 95%;
+}
+
+.modal_explain_image .include_text{
+    text-align: center;
 }
 
 footer {
