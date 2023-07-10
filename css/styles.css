@@ -191,6 +191,11 @@ header {
     padding-left: 20px;
 }
 
+.header .nav_contents .nav_help li:hover {
+    opacity: .5;
+    
+}
+
 .news {
     width: 100%;
     max-width: 1200px;
