@@ -159,8 +159,63 @@ header {
     height: auto;
 }
 
-.st_main .main_image {
+.st_main .st_top {
     margin-top: 70px;
+}
+
+.st_main .st_agenda ul {
+    display: flex;
+    font-size: 12px;
+    color: #7f7f7f;
+    padding-left: 20px;
+}
+
+.st_main .st_agenda li {
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.st_main .st_agenda a {
+    position: relative;
+}
+
+.st_main .st_agenda a:hover {
+    opacity: .5;
+}
+
+.st_main .st_agenda a::after {
+    position: absolute;
+    content: '>';
+    bottom: -6px;
+    right: -18px;
+    font-size: 17px;
+}
+
+.st_main .st_heading {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.st_heading .st_title {
+    font-size: 30px;
+}
+
+.st_heading .st_subtitle {
+    font-size: 17px;
+    color: #7f7f7f;
+    margin-top: 20px;
+} 
+
+@media screen and (max-width: 768px){
+    .st_main .st_agenda{
+       display: none;
+    }
+}
+
+.st_main .st_explain {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 18px;
 }
 
 
