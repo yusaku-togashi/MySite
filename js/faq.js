@@ -22,32 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-const modal = document.getElementById('modal');
-const opModal = document.getElementById('op_modal');
-const clModal = document.getElementById('cl_modal');
-const body = document.body;
-const toggle = [opModal,clModal];
-
-for (let i = 0; i<toggle.length ; i++){
-  toggle[i].addEventListener('click',function(){
-    modal.classList.toggle('is_show');
-    body.classList.toggle('is_show')
-  },false);
-}
-
-$(document).ready(function() {
-    
-    $(window).scroll(function() {
-        var isVisible = isElementVisible('.about_production_process') && isElementVisible('.about_company_environment');
-
-        if (isVisible) {
-            $('.about_production_process').addClass('box_rotateX');
-            $('.about_company_environment').addClass('box_rotateX2');
-        }
-    });
-
-
     function isElementVisible(selector) {
         var $element = $(selector);
         var scrollTop = $(window).scrollTop();
@@ -60,19 +34,6 @@ $(document).ready(function() {
     
         return isVisible;
     }
-});
-
-$(document).ready(function() {
-    $('a[href^="#"]').on('click', function(event) {
-      event.preventDefault();
-      
-      var target = $($(this).attr('href'));
-      
-      $('html, body').animate({
-        scrollTop: target.offset().top -100
-      }, 500);
-    });
-});
 
 var footBoxTitles = document.querySelectorAll('.js_box_title');
 
@@ -83,3 +44,14 @@ footBoxTitles.forEach(function(boxTitle) {
         boxTitle.classList.toggle('active');
     });
 });
+
+
+
+const accordionTitle = document.querySelectorAll('.jsAccordionTitle');
+
+for (let i = 0; i < accordionTitle.length; i++){
+  accordionTitle[i].addEventListener('click', function() {
+    this.classList.toggle('is-active');
+    this.nextElementSibling.classList.toggle('is_open');
+  });
+}
