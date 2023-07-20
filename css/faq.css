@@ -200,11 +200,24 @@ header {
     font-size: 30px;
 }
 
+@media screen and (max-width: 768px){
+    .st_heading .st_title {
+        font-size: 20px;
+    }
+}
+
 .st_heading .st_subtitle {
     font-size: 17px;
     color: #7f7f7f;
     margin-top: 20px;
 } 
+
+@media screen and (max-width: 768px){
+    .st_heading .st_subtitle {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
 
 @media screen and (max-width: 768px){
     .st_main .st_agenda{
@@ -218,6 +231,17 @@ header {
     font-size: 18px;
 }
 
+@media screen and (max-width: 768px){
+    .st_main .st_explain {
+        text-align: left;
+        max-width: 650px;
+        margin: auto;
+        margin-top: 40px;
+        font-size: 13px;
+        line-height: 25px
+    }
+}
+
 .serch_category_button {
     margin-top: 70px;
 }
@@ -229,12 +253,30 @@ header {
     border-right: 2px solid #7f7f7f;
 }
 
+@media screen and (max-width: 768px){
+    .serch_button_contents{
+       display: block;
+       text-align: center;
+       max-width: 650px;
+       border-right: none;
+    }
+}
+
 .serch_button_item {
     padding-left: 30px;
     padding-right: 60px;
     border-left: 2px solid #7f7f7f;
     font-size: 17px;
     position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .serch_button_item{
+       margin: 20px 0;
+       border-left: 3px solid #7f7f7f;
+       border-right: 3px solid #7f7f7f;
+       font-size: 12px;
+    }
 }
 
 .serch_button_item p::after {
@@ -250,8 +292,23 @@ header {
     transform: rotate(135deg);
 }
 
+@media screen and (max-width: 768px){
+    .serch_button_item p::after{
+       width: 5px;
+       height: 5px;
+       right: 30%;
+    }
+}
+
 #common_inquiry {
-    margin-top: 100px;
+    margin-top: 70px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    #common_inquiry{
+       padding-bottom: 0px;
+    }
 }
 
 .serch_tag {
@@ -265,6 +322,13 @@ header {
     font-size: 23px;
 }
 
+@media screen and (max-width: 768px){
+    .serch_tag{
+       height: 35px;
+       font-size: 16px;
+    }
+}
+
 .common_inquiry_contents {
     width: 100%;
     max-width: 1200px;
@@ -273,11 +337,24 @@ header {
     border-bottom: 3px solid rgba(199, 199, 199, 0.8);    
 }
 
+@media screen and (max-width: 768px){
+    .common_inquiry_contents{
+       margin-top: 0px;
+    }
+}
+
 .common_inquiry_item {
     position: relative;
     border-top:3px solid rgba(199, 199, 199, 0.8);
     padding: 20px 50px;
     font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+    .common_inquiry_item{
+       font-size: 13px;
+       padding: 20px 30px;
+    }
 }
 
 .common_inquiry_item:hover {
@@ -297,8 +374,22 @@ header {
     transform: rotate(135deg);
 }
 
+@media screen and (max-width: 768px){
+    .common_inquiry_item::after{
+       width: 5px;
+       height: 5px;
+    }
+}
+
 #serch_in_category {
-    padding-top: 70px;
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+    #serch_in_category{
+       padding-bottom: 0px;
+    }
 }
 
 .category_contents {
@@ -311,12 +402,26 @@ header {
     text-align: center;
 }
 
+@media screen and (max-width: 768px){
+    .category_contents{
+       margin: 60px 0;
+       justify-content: center;
+    }
+}
+
 .category_contents .category_item {
     position: relative;
     width: 300px;
     height: 220px;
     background-color: rgba(300, 200, 176, 0.2);
     margin-top: 60px;
+}
+
+@media screen and (max-width: 768px){
+    .category_contents .category_item{
+       margin-top: 10px;
+       margin-right: 10px;
+    }
 }
 
 .category_contents .category_item:hover {
@@ -345,7 +450,14 @@ header {
 }
 
 #serch_in_list {
-    padding-top: 30px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    #serch_in_list{
+        padding-bottom: 0;
+    }
 }
 
 .list_contents {
@@ -367,12 +479,22 @@ header {
     width: 80px;
 }
 
+.list_contents_title .list_title_image {
+    width: 55px;
+}
+
 .list_contents_title .list_title_image img {
     width: 50px;
 }
 
 .list_contents_title .list_item_title {
     font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+    .list_contents_title .list_item_title{
+       font-size: 13px;
+    }
 }
 
 .list_item_title:hover {
@@ -401,9 +523,90 @@ header {
     font-size: 16px;
     padding: 15px 145px;
     transition: 0.5s;
-    cursor: pointer;
     background-color: #fff;
     border-top:1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 768px){
+    .item_body_title{
+       font-size: 13px;
+       padding: 15px 115px;
+    }
+}
+
+.jsAccordionTitle {
+    position: relative;
+    cursor: pointer;
+}
+
+.jsAccordionTitle::before,
+.jsAccordionTitle::after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 2.5px;
+    transition: 1s;
+    background-color: #7e7e7e;
+}
+
+@media screen and (max-width: 768px){
+    .jsAccordionTitle::before,
+    .jsAccordionTitle::after {
+        width: 12px;
+    }
+}
+
+.jsAccordionTitle::before{
+    top: 50%;
+    right:2%;
+    transform: rotate(0deg);
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+@media screen and (max-width: 768px){
+    .jsAccordionTitle::before {
+        right: 5%;
+    }
+}
+
+.jsAccordionTitle::after {
+    top: 50%;
+    right: 2%;
+    transform: rotate(90deg);
+    transition: .4s;
+    transition-delay: .1s;
+}
+
+@media screen and (max-width: 768px){
+    .jsAccordionTitle::after {
+        right: 5%;
+    }
+}
+
+.jsAccordionTitle.active::before{
+    top: 50%;
+    right: 2%;
+    transform: rotate(0deg);
+}
+
+@media screen and (max-width: 768px){
+    .jsAccordionTitle.active::before {
+        right: 5%;
+    }
+}
+
+.jsAccordionTitle.active::after {
+    top: 50%;
+    right: 2%;
+    transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 768px){
+    .jsAccordionTitle.active::after {
+        right: 5%;
+    }
 }
 
 .item_body_title:hover {
@@ -431,10 +634,24 @@ header {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 768px){
+    .item_body_text .body_question{
+       font-size: 13px;
+       padding-left: 50px;
+    }
+}
+
 .item_body_text .body_question_answer {
     margin: 20px 30px 20px 30px;
     font-size: 17px;
     line-height: 32px;
+}
+
+@media screen and (max-width: 768px){
+    .item_body_text .body_question_answer{
+       font-size: 13px;
+       padding-left: 50px;
+    }
 }
 
 .body_question_answer .problem_case,
@@ -445,6 +662,12 @@ header {
 .detail_page p{
     text-align: end;
     padding: 10px 50px 20px 0;
+}
+
+@media screen and (max-width: 768px){
+    .detail_page p{
+       font-size: 13px;
+    }
 }
 
 .answer_bold_text {
@@ -465,17 +688,48 @@ header {
 }
 
 #products_inquiry {
-    padding-top: 50px;
+    margin-top: 70px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    #products_inquiry{
+       text-align: left;
+    }
 }
 
 .inquiry_form_contents {
     margin-top: 70px;
 }
 
+@media screen and (max-width: 768px){
+    .inquiry_form_contents{
+       max-width: 650px;
+       margin: auto;
+       margin-top: 30px;
+    }
+}
+
 .inquiry_contents_item {
     font-size: 18px;
     line-height: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .inquiry_contents_item{
+       font-size: 12px;
+       line-height: 25px;
+    }
+}
+
+.sp_only {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .sp_only{
+       display: flex;
+    }
 }
 
 .free_dial {
@@ -484,8 +738,21 @@ header {
     font-weight: bold;
 }
 
+@media screen and (max-width: 768px){
+    .free_dial{
+       font-size: 14px;
+       line-height: 25px;
+    }
+}
+
 .free_dial_attention {
     font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .free_dial_attention{
+       font-size: 12px;
+    }
 }
 
 .inquiry_form_button {
@@ -499,6 +766,14 @@ header {
     justify-content: center;
 }
 
+@media screen and (max-width: 768px){
+    .inquiry_form_button{
+       font-size: 12px;
+       width: 200px;
+       margin-top: 25px;
+    }
+}
+
 .inquiry_form_button::after {
     content: "";
     width: 10px;
@@ -510,10 +785,28 @@ header {
     transform: rotate(45deg);
 }
 
+@media screen and (max-width: 768px){
+    .inquiry_form_button::after{
+       width: 5px;
+       height: 5px;
+       margin-top: 5px;
+    }
+}
+
+.inquiry_form_button:hover {
+    opacity: .5;
+}
+
 footer {
     color: #000;
     background-color:rgba(300, 200, 176, 0.2);
     margin-top:100px;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+       margin-top: 70px;
+    }
 }
 
 .footer {
