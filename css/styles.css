@@ -198,7 +198,7 @@ header {
 
 .js_fadein_block {
     opacity: 0;
-    transition-delay: .8s;
+    transition-delay: 1s;
     transition: .5s linear;
 }
 
