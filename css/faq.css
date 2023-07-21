@@ -248,7 +248,7 @@ header {
 
 .serch_button_contents {
     display: flex;
-    max-width: 1250px;
+    max-width: 860px;
     margin: auto;
     border-right: 2px solid #7f7f7f;
 }
@@ -605,6 +605,81 @@ header {
 
 @media screen and (max-width: 768px){
     .jsAccordionTitle.active::after {
+        right: 5%;
+    }
+}
+
+.jsBoxTitle {
+    position: relative;
+    cursor: pointer;
+}
+
+.jsBoxTitle::before,
+.jsBoxTitle::after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 2.5px;
+    transition: 1s;
+    background-color: #7e7e7e;
+}
+
+@media screen and (max-width: 768px){
+    .jsBoxTitle::before,
+    .jsBoxTitle::after {
+        width: 12px;
+    }
+}
+
+.jsBoxTitle::before{
+    top: 50%;
+    right:2%;
+    transform: rotate(0deg);
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+@media screen and (max-width: 768px){
+    .jsBoxTitle::before {
+        right: 5%;
+    }
+}
+
+.jsBoxTitle::after {
+    top: 50%;
+    right: 2%;
+    transform: rotate(90deg);
+    transition: .4s;
+    transition-delay: .1s;
+}
+
+@media screen and (max-width: 768px){
+    .jsBoxTitle::after {
+        right: 5%;
+    }
+}
+
+.jsBoxTitle.active::before{
+    top: 50%;
+    right: 2%;
+    transform: rotate(0deg);
+}
+
+@media screen and (max-width: 768px){
+    .jsBoxTitle.active::before {
+        right: 5%;
+    }
+}
+
+.jsBoxTitle.active::after {
+    top: 50%;
+    right: 2%;
+    transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 768px){
+    .jsBoxTitle.active::after {
         right: 5%;
     }
 }
