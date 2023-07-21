@@ -196,6 +196,16 @@ header {
     
 }
 
+.js_fadein_block {
+    opacity: 0;
+    transition-delay: .8s;
+    transition: .5s linear;
+}
+
+.js_fadein_block.fadein {
+    opacity: 1;
+}
+
 .news {
     width: 100%;
     max-width: 1200px;
