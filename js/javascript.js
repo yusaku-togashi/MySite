@@ -94,11 +94,6 @@ var articles = document.getElementsByClassName("js_articles");
 allButton.addEventListener("click", function(){
     for (var i = 0; i < articles.length; i++){
         articles[i].style.display = "flex";
-        if (!(serchButton == "clicked")){
-            allButton.classList.toggle("clicked")
-        }else{
-            allButton.classList.remove("clicked")
-        }
     }
 });
 
@@ -108,7 +103,7 @@ newsButton.addEventListener("click", function(){
     }
     var newsArticles = document.querySelectorAll(".js_articles .js_category h3#news");
     for (var i = 0; i < newsArticles.length; i++){
-        var article = newsArticles[i].parentNode.parentNode;
+        var article = newsArticles[i].closest(".js_articles");
         article.style.display = "flex";
     }
 });
@@ -119,7 +114,7 @@ pickupButton.addEventListener("click", function(){
     }
     var pickupArticles = document.querySelectorAll(".js_articles .js_category h3#pickup");
     for (var i = 0; i < pickupArticles.length; i++){
-        var article = pickupArticles[i].parentNode.parentNode;
+        var article = pickupArticles[i].closest(".js_articles");
         article.style.display = "flex";
     }
 });
