@@ -158,73 +158,40 @@ header {
     padding-left: 20px;
 }
 
-.st_main {
-    width: 100%;
-    height: auto;
-}
-
-.st_main .main_image {
-    margin-top: 70px;
-}
-
-.st_main .main_image #pc_only {
+.natural_material {
     position: relative;
+    margin-top: 70px;
     width: 100%;
-    min-height: 383px;
+    height: 880px;
+    background-size: 100% 880px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_pc.jpg");
 }
 
-.st_main .main_image #sp_only {
-    display: none;
-}
-
-@media screen and (max-width: 768px){
-    .st_main .main_image #sp_only{
-        display: block;
-    }
-}
-@media screen and (max-width: 768px){
-    .st_main .main_image #pc_only{
-        display: none;
-    }
-}
-
-.st_main .st_top {
-    position: absolute;
-    top: 8%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-}
-
-@media screen and (max-width: 768px){
-    .st_main .st_top{
-        top: 13%;
-    }
-}
-
-.st_main .st_agenda ul {
+.natural_material .st_agenda ul {
     display: flex;
     font-size: 12px;
     color: #7f7f7f;
+    max-width: 1400px;
+    margin: auto;
     padding-left: 20px;
+    padding-top: 20px;
 }
 
-.st_main .st_agenda li {
+.natural_material .st_agenda li {
     margin-right: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.st_main .st_agenda a {
+.natural_material .st_agenda a {
     position: relative;
 }
 
-.st_main .st_agenda a:hover {
+.natural_material .st_agenda a:hover {
     opacity: .5;
 }
 
-.st_main .st_agenda a::after {
+.natural_material .st_agenda a::after {
     position: absolute;
     content: '>';
     bottom: -6px;
@@ -233,464 +200,37 @@ header {
 }
 
 @media screen and (max-width: 768px){
-    .st_main .st_agenda{
+    .natural_material .st_agenda{
        display: none;
     }
 }
 
-.st_main .st_heading {
-    text-align: center;
-    padding:100px 0;
-}
-
-
-@media screen and (max-width: 768px){
-    .st_main .st_heading {
-       padding: 50px 0;
-    }
-}
-
-
-.st_main .st_heading .st_title {
-    font-size: 30px;
-}
-
-@media screen and (max-width: 768px){
-    .st_main .st_heading .st_title{
-       font-size: 20px;
-    }
-}
-
-.st_main .st_heading .st_subtitle {
-    font-size: 14px;
-    padding-top: 10px ;
-    color: #9f9f9f;
-}
-
-
-@media screen and (max-width: 768px){
-    .st_main .st_heading .st_subtitle{
-       font-size: 10px;
-    }
-}
-
-.sdgs_explain {
-    margin-top: 70px;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px){
-    .sdgs_explain{
-        margin-top: 20px;
-    }
-}
-
-.sdgs_explain .heading {
-    font-size: 18px;
-    line-height: 40px;
-} 
-
-@media screen and (max-width: 768px){
-    .sdgs_explain .heading{
-        font-size: 12px;
-        text-align: left;
-        padding: 20px 40px;
-        margin: auto;
-        line-height: 25px;
-    }
-}
-
-.sdgs_detail_banner #pc_only{
-    width: 100%;
-    max-width: 1200px;;
-    margin-top: 100px;
-}
-
-.sdgs_detail_banner #sp_only {
-    display: none;
-    margin-top: 30px;
-}
-
-@media screen and (max-width: 768px){
-    .sdgs_detail_banner #pc_only{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .sdgs_detail_banner #sp_only{
-        display: block;
-    }
-}
-
-.sdgs_achievement .sdgs_achievement_tab{
-    display: flex;
-    justify-content: space-between;
-    width: 430px;
-    margin: auto;
-    margin-top: 100px;
-}
-
-@media screen and (max-width: 768px){
-    .sdgs_achievement .sdgs_achievement_tab{
-       width: 100%;
-       justify-content: center;
-    }
-}
-
-.about_production_process {
-    width: 190px;
-}
-
-@media screen and (max-width: 768px){
-    .about_production_process{
-       width: 37%;
-       padding: 20px;
-    }
-}
-
-.about_production_process.box_rotateX {
-    animation: rotateX .4s linear;
-}
-
-.about_company_environment {
-    width: 190px;
-}
-
-@media screen and (max-width: 768px){
-    .about_company_environment{
-       width: 37%;
-       padding: 18px;
-    }
-}
-
-.about_company_environment.box_rotateX2 {
-    animation: rotateX2 .4s linear;
-    animation-delay: .3s;
-}
-
-@keyframes rotateX {
-    0% {
-        transform: rotateX(0deg);
-    }
-    100% {
-        transform: rotateX(360deg);
-    }
-}
-
-@keyframes rotateX2 {
-    0% {
-        transform: rotateX(0deg);
-    }
-    100% {
-        transform: rotateX(-360deg);
-    }
-}
-
-.sdgs_achievement_contents {
-    width: 100%;
-    height: auto;
-    max-width: 1200px;
-    margin:auto;
-}
-
-.sdgs_achievement_contents .heading{
-    text-align: center;
-    font-size: 28px;
-    margin-top: 70px;
-}
-
-@media screen and (max-width: 768px){
-    .sdgs_achievement_contents .heading{
-       font-size: 25px;
-    }
-}
-
-.sdgs_achievement_contents .subtitle .sp_only{
-    display: none;
-}
-
-@media screen and (max-width: 768px){
-    .sdgs_achievement_contents .subtitle .sp_only{
-       display: block;
-    }
-}
-
-.sdgs_achievement_contents .subtitle {
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px){
-    .sdgs_achievement_contents .subtitle {
-       font-size: 13px;
-       line-height: 22px;
-    }
-}
-
-.sdgs_achievement_contents .contents_item {
-    margin-top: 50px;
-}
-
-.sdgs_achievement_contents .production_process_list,
-.company_environment_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-@media screen and (max-width: 768px){
-    .sdgs_achievement_contents .production_process_list,
-.company_environment_list{
-       justify-content: center;
-    }
-}
-
-.list_item {
-    width: 100%;
-    max-width: 270px;
-    margin-top: 50px;
-    height: auto;
-    position: relative;
-}
-
-@media screen and (max-width: 768px){
-    .list_item{
-       margin: 10px;
-    }
-}
-
-.list_item .list_img {
-    display: flex;
-    width: 100%;
-}
-
-.list_item .list_img p {
-    width: 90px;
-    height: 90px;
-}
-
-.list_item .list_title {
-    width: 100%;
-    height: 130px;
-    font-size: 21px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
-@media screen and (max-width: 768px){
-    .list_item .list_title{
-       font-size: 15px;
-    }
-}
-
-.list_item .item_transition_block {
-    transition:.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
-    transform: scale(1,1);  
-    transition: .2s linear;
-}
-
-.list_item .list_title h4 {
-    text-align: center;
-}
-
-.list_item .list_img .img_skyblue {
-    background-color: #87cefa;
-}
-
-.list_item .list_img .img_brown {
-    background-color: #d26900;
-}
-
-.list_item .list_img .img_green {
-    background-color: #009000;
-}
-
-.list_item .list_img .img_blue{
-    background-color: #2222ff;
-}
-
-.list_item .list_img .img_yellow{
-    background-color: #ffdd00;
-}
-
-.list_item .list_img .img_orange{
-    background-color: #ffa500;
-}
-
-.list_item .list_img .img_pink{
-    background-color: #ff7aad;
-}
-
-.bg_pink {
-    background-color: #ff7aad;
-}
-
-.bg_green {
-    background-color: #008000;
-}
-
-.bg_yellow {
-    background-color: #ffdd00;
-}
-
-.bg_skyblue {
-    background-color: #87cefa;
-}
-
-.bg_orange{
-    background-color: #ffa500;
-}
-
-.bg_brown {
-    background-color: #d26900;
-}
-
-.bg_blue {
-    background-color: #2222ff
-}
-
-.list_item .item_mask{
-	position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	z-index: 2;
-	left:0;
-	top: 0;
-	opacity:1;
-	transition: .2s ease-in;
-    transition-delay: .1s;
-    overflow: hidden;
-    transform: translateY(0);
-	background:#7e7e7e;
-    color: #fff;
-	width:100%;
-    height: 0;
-    font-size: 20px
-}
-
-@media screen and (max-width: 768px){
-    .list_item .item_mask{
-       font-size: 13px;
-    }
-}
-
-.list_item:hover .item_mask{
-    opacity:1;
-	transform: translateY(0);
-    height: 100%;
-}
-
-
-.list_item #op_modal{
-	position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	z-index: 2;
-	left:0;
-	top: 0;
-	opacity:1;
-	transition: .2s ease-in;
-    transition-delay: .1s;
-    overflow: hidden;
-    transform: translateY(0);
-	background:#7e7e7e;
-    color: #fff;
-	width:100%;
-    height: 0;
-    font-size: 20px
-}
-
-.list_item:hover #op_modal{
-    opacity:1;
-	transform: translateY(0);
-    height: 100%;
-}
-
-.list_item:hover .item_transition_block{
-    transform: scale(1, 0);
-    transform-origin: center;
-}
-
-.modal {
-    visibility: hidden;
-    opacity: 0;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: .4s;
-    color: #fff;
-    overflow-y: scroll;
-}
-  
-.modal_wrapper {
+.animation_text {
     position: absolute;
-    top: 10%;
-    left: 0;
+    width: 50%;
+    height: auto;
+    bottom: 55%;
     right: 0;
-    border-radius: 16px;
-    width:100%;  
-}
-
-.modal_bg {
-    width: 100%;
-    height: 2800px;
-    background-color:rgba(0, 0, 0, 0.7);
-}
-
-.cl_modal {
-    position: absolute;
-    top: 0;
-    right: 18px;
-    cursor: pointer;
-}
-
-.cl_modal p {
-    font-size: 50px;
-}
-  
-.is_show {
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal_contents .modal_contents_image {
-    width: 375px;
+    left: 0;
     margin: auto;
-    margin-top: 70px;
 }
 
-.modal_contents_image img {
-    width: 120px;
-    padding: 10px;
-}
-
-.modal_contents .modal_explain {
+.products_recycle {
+    position: relative;
     width: 100%;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 50px;
-    font-size: 18px;
+    height: 880px;
+    background-size: 100% 880px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_pc.jpg");
 }
 
-.modal_contents .modal_explain_image {
-    margin-top: 30px;
-}
-
-.modal_contents .modal_explain_image img {
-   scale: 95%;
-}
-
-.modal_explain_image .include_text{
-    text-align: center;
+.recycle_to_glasswool {
+    position: relative;
+    width: 100%;
+    height: 880px;
+    background-size: 100% 880px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_pc.jpg");
 }
 
 footer {
