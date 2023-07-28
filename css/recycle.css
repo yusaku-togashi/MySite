@@ -222,6 +222,7 @@ header {
     left: 0;
     width: 200px;
     margin: auto;
+    transition: 1s linear;
 }
 
 .scroll_button {
@@ -233,7 +234,7 @@ header {
     font-size: 18px;
     color: #5f5f5f;
     margin: auto;
-    z-index: 10;
+    z-index: 12;
 }
 
 .scroll_button::after {
@@ -253,11 +254,22 @@ header {
     height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    overflow: hidden;
     background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_pc.jpg");
 }
 
-.products_recycle .animation_image {
-    display: none;
+.animation_image01 {
+    position: absolute;
+    width: 200px;
+    bottom: 25%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.animation_image02 img{
+    width: 100%;
+    height: 100Vh;
 }
 
 .animation_text01 {
@@ -268,7 +280,7 @@ header {
     right: 0;
     left: 0;
     margin: auto;
-    z-index: 6;
+    z-index: 10;
 }
 
 .animation_text02 {
@@ -279,7 +291,8 @@ header {
     right: 0;
     left: 0;
     margin: auto;
-    z-index: 4;
+    z-index: 8;
+    transition-delay: .5s;
 }
 
 .animation_text03 {
@@ -290,7 +303,7 @@ header {
     right: 0;
     left: 0;
     margin: auto;
-    z-index: 4;
+    z-index: 8;
 }
 
 .animation_text04 {
@@ -301,16 +314,19 @@ header {
     right: 0;
     left: 0;
     margin: auto;
-    z-index: 4;
+    z-index: 6;
+    transition-delay: .5s;
 }
 
 .half_mask_image  {
     position: absolute;
     left: 50%;
+    z-index: 4;
+}
+
+.half_mask_image img {
     width: 100%;
-    height: 100%;
-    z-index: 2;
-    
+    height: 100vh;
 }
 
 .recycle_to_glasswool {
@@ -322,13 +338,10 @@ header {
     background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_pc.jpg");
 }
 
-.recycle_to_glasswool .animation_image {
-    display: none;
-}
-
 .recycle_movie {
     width: 100%;
     height: 100%;
+    padding-bottom: 100px;
 }
 
 .recycle_movie .heading {
@@ -343,6 +356,16 @@ header {
     max-width: 900px;
     margin: auto;
     margin-top: 80px;
+}
+
+.js_animation_package {
+    opacity: 0;
+    transition: 1s linear;
+    transition-delay: .5s;
+}
+
+.js_animation_package.active {
+    opacity: 1;
 }
 
 footer {
