@@ -168,6 +168,12 @@ header {
     background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_pc.jpg");
 }
 
+@media screen and (max-width: 768px){
+    .natural_material{
+       background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_sp.jpg");
+    }
+}
+
 .natural_material .st_agenda ul {
     display: flex;
     font-size: 12px;
@@ -205,6 +211,18 @@ header {
     }
 }
 
+@media screen and (max-width: 768px){
+    .pc_only{
+       display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .sp_only{
+       display: none;
+    }
+}
+
 .animation_text {
     position: absolute;
     width: 50%;
@@ -215,14 +233,17 @@ header {
     margin: auto;
 }
 
-.natural_material .animation_image {
-    position: absolute;
-    top: 53%;
-    right: 0;
-    left: 0;
-    width: 200px;
-    margin: auto;
-    transition: 1s linear;
+@media screen and (max-width: 768px){
+    .animation_text{
+       width: 75%;
+       bottom: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .natural_material .animation_image{
+       width: 100px;
+    }
 }
 
 .scroll_button {
@@ -237,6 +258,14 @@ header {
     z-index: 12;
 }
 
+@media screen and (max-width: 768px){
+    .scroll_button{
+        width: 40px;
+        font-size: 10px;
+        bottom: 4%;
+    }
+}
+
 .scroll_button::after {
     content: "";
     display: block;
@@ -246,6 +275,13 @@ header {
     border-right: 2px solid #5f5f5f;
     transform: rotate(135deg);
     margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .scroll_button::after{
+        width: 5px;
+        height: 5px;
+    }
 }
 
 .products_recycle {
@@ -258,6 +294,12 @@ header {
     background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_pc.jpg");
 }
 
+@media screen and (max-width: 768px){
+    .products_recycle{
+        background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_sp.jpg");
+    }
+}
+
 .animation_image01 {
     position: absolute;
     width: 200px;
@@ -265,6 +307,12 @@ header {
     right: 0;
     left: 0;
     margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .animation_image01{
+       width: 180px;
+    }
 }
 
 .animation_image02 img{
@@ -283,6 +331,13 @@ header {
     z-index: 10;
 }
 
+@media screen and (max-width: 768px){
+    .animation_text01{
+       width: 60%;
+       bottom: 80%;
+    }
+}
+
 .animation_text02 {
     position: absolute;
     width: 60%;
@@ -295,6 +350,13 @@ header {
     transition-delay: .5s;
 }
 
+@media screen and (max-width: 768px){
+    .animation_text02{
+        scale: 110%;
+       bottom: 52%;
+    }
+}
+
 .animation_text03 {
     position: absolute;
     width: 40%;
@@ -304,6 +366,13 @@ header {
     left: 0;
     margin: auto;
     z-index: 8;
+}
+
+@media screen and (max-width: 768px){
+    .animation_text03{
+       width: 70%;
+       bottom: 80%;
+    }
 }
 
 .animation_text04 {
@@ -318,6 +387,13 @@ header {
     transition-delay: .5s;
 }
 
+@media screen and (max-width: 768px){
+    .animation_text04{
+        scale: 130%;
+       bottom: 58%;
+    }
+}
+
 .half_mask_image  {
     position: absolute;
     left: 50%;
@@ -325,7 +401,7 @@ header {
 }
 
 .half_mask_image img {
-    width: 100%;
+    width: 100vh;
     height: 100vh;
 }
 
@@ -336,6 +412,12 @@ header {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_pc.jpg");
+}
+
+@media screen and (max-width: 768px){
+    .recycle_to_glasswool{
+        background-image: url("https://www.hario.com/theme-images/about/recycle/section_bg01_sp.jpg");
+    }
 }
 
 .recycle_movie {
@@ -351,11 +433,23 @@ header {
     padding-top: 180px;
 }
 
+@media screen and (max-width: 768px){
+    .recycle_movie .heading{
+        max-width: calc(100%/1.5);
+    }
+}
+
 .recycle_movie .movie_modal_link .link_image{
     width: 100%;
-    max-width: 900px;
+    max-width: calc(100%/2);
     margin: auto;
     margin-top: 80px;
+}
+
+@media screen and (max-width: 768px){
+    .recycle_movie .movie_modal_link .link_image{
+        max-width: calc(100%/1.5);
+    }
 }
 
 .js_animation_package {

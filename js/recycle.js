@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
     checkAnimation();
 });
 
-
 var footBoxTitles = document.querySelectorAll('.js_box_title');
 
 footBoxTitles.forEach(function(boxTitle) {
