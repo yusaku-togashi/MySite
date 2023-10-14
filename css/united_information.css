@@ -1,6 +1,11 @@
+body {
+    background-color: #f5f5f5;
+}
+
 header {
     width: 100%;
     height: auto;
+    background-color: #fff;
 }
 
 header .header_icon {
@@ -14,7 +19,7 @@ header .header_icon img{
     height: 50px;
 }
 
-.slider {
+.slider-mv {
     position:relative;
     z-index: 1;
     height: 80vh;
@@ -113,7 +118,7 @@ header .wrapper{
 }
 
 section {
-    margin-top: 50px;
+    margin-top: 80px;
     padding: 0 15px;
 }
 
@@ -124,3 +129,217 @@ section {
     text-align: center;
 }
 
+.club-topics .wrapper {
+    background-color: #fff;
+}
+
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.tab li {
+    width: 100%;
+    max-width: calc(100% / 2);
+}
+
+.tab li a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #d5d5d5;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.tab li.active a {
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tab li p {
+    font-weight: 600;
+}
+
+.area {
+    display: none;
+    opacity: 0;
+    background-color: #fff;
+    padding: 20px 0 50px 0;
+    text-align: center;
+}
+
+@keyframes displayAnime{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.area.is-active {
+    display: block;
+    animation-name: displayAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.area h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0;
+    color: #ff0000;
+}
+
+.area li {
+    margin: 20px 0;
+}
+
+.area li h4 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.area li p {
+    font-size: 20px;
+}
+
+.results_slider {
+    margin-top: 80px;
+}
+
+.club_result {
+    width: 100%;
+    height: auto;
+}
+
+.slider-result {
+    width: 94%;
+    margin:0 auto;
+}
+
+.slider-result .slick-slide {
+    transform: scale(0.8);
+    transition: all .5s;
+    opacity: .5;
+}
+
+.slider .slick-slide.slick-center {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+.slick-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.slick-dots .slick-active button {
+    background-color: #333;
+}
+
+.results_contents{
+    width: 60vw;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.slider_contents .results_detail_image_block {
+    width: 60vw;
+    height: 300px;
+}
+
+.results_united_image {
+    width: 175px;
+    height: 175px;
+    padding: 12.5px;
+}
+
+.results_opponent_image {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+}
+
+.results_opponent_image img{
+    object-fit: cover;
+}
+
+.results_detail_image_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.results_detail_image_block p{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.results_detail_item_category {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.results_detail_item_date {
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.results_detail_item_card {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.results_detail_item_result {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing:10px
+}
