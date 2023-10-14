@@ -1,0 +1,126 @@
+header {
+    width: 100%;
+    height: auto;
+}
+
+header .header_icon {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header .header_icon img{
+    width: 50px;
+    height: 50px;
+}
+
+.slider {
+    position:relative;
+    z-index: 1;
+    height: 80vh;
+}
+
+.slider-item01 {
+    background-image:url('/assets/images/united_information/mv_01.jpeg');
+}
+
+.slider-item02 {
+    background-image:url('/assets/images/united_information/mv_02.jpeg');
+}
+
+.slider-item03 {
+    background-image:url('/assets/images/united_information/mv_03.jpeg');
+}
+
+
+.slider-item {
+    width: 100%;
+    height:80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+  
+header .wrapper p{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    font-family: 'Times New Roman';
+}
+  
+header .wrapper{
+    position: relative;
+}
+
+.header_nav {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.3);
+}
+
+.header_nav_list {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    font-family: 'Gill Sans';
+}
+
+.header_nav_list .header_nav_item{
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    max-width: 120px;
+    width: 100%;
+    text-align: left;
+}
+
+.header_nav_list .header_nav_item a{
+    display: block;
+    padding: 10px 0;
+}
+
+.header_nav_list .header_nav_item:hover{
+    color: #ff0000;
+    background-color: #fff;
+}
+
+.nav_icon {
+    position: absolute;
+    display: none;
+    top: 30%;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+}
+
+.header_nav_list .header_nav_item:hover .nav_icon{
+    display: block;
+}
+
+section {
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+.section_heading h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Gill Sans';
+    text-align: center;
+}
+
