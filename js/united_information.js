@@ -1,3 +1,33 @@
+$(function() {
+  $('.header_hamburger').click(function() {
+      $(this).toggleClass('active');
+
+      if ($(this).hasClass('active')) {
+          $('.header_hamburger_nav').addClass('active');
+          $('html, body').css('overflow', 'hidden');
+      } else {
+          $('.header_hamburger_nav').removeClass('active');
+          $('html, body').removeAttr('style');
+      }
+
+  });
+});
+
+$(function() {
+  $('.nav_item').click(function() {
+    $('.header_hamburger').removeClass('active');
+    $('.header_hamburger_nav').removeClass('active');
+    $('html, body').removeAttr('style');
+  });
+});
+
+$('.header_nav_list a[href*="#"]').click(function () {
+  var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+  var pos = $(elmHash).offset().top;  //idの上部の距離を取得
+  $('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+  return false;
+});
+
 $('.slider-mv').slick({
   fade:true,
   autoplay: true,
@@ -50,4 +80,15 @@ $('.slider-result').slick({
   centerMode: true,
   variableWidth: true,
   dots: true,
+});
+
+$('.schedule_list_title').on('click', function() {
+  var findElm = $(this).next(".schedule_list_box");
+  $(findElm).slideToggle();
+    
+  if($(this).hasClass('close')){
+    $(this).removeClass('close');
+  }else{
+    $(this).addClass('close');
+  }
 });
